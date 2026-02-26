@@ -1,6 +1,6 @@
 # Scott Sutherland — Next.js Portfolio
 
-Personal portfolio and project showcase for Scott Sutherland, a Brisbane-based web developer. This repository powers the live site at [scottsutherland.info](https://scottsutherland.info) and demonstrates production-ready Next.js patterns, component-driven architecture, and accessibility-first front-end development.
+Personal portfolio and project showcase for Scott Sutherland, a Toronto-based web developer. This repository powers the live site at [scottsutherland.info](https://scottsutherland.info) and demonstrates production-ready Next.js patterns, component-driven architecture, and accessibility-first front-end development.
 
 Live site: https://scottsutherland.info
 
@@ -162,7 +162,7 @@ The original site was a single-page vanilla HTML/CSS/JS application with a PHP/P
 
 ## About / Contact
 
-Built and maintained by **Scott Sutherland** — Brisbane-based web developer specialising in Next.js, React, and accessible front-end builds.
+Built and maintained by **Scott Sutherland** — Toronto-based web developer specialising in Next.js, React, WordPress, and accessible front-end builds.
 
 - Portfolio: [scottsutherland.info](https://scottsutherland.info)
 - Web Studio: [webcheddar.ca](https://webcheddar.ca)
