@@ -1,0 +1,133 @@
+/* ===== HERO SECTION ===== */
+.heroSection {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: visible;
+}
+
+.header {
+  position: relative;
+  height: 90vh;
+}
+
+.headerImg {
+  width: 100%;
+  height: 685px;
+  object-fit: cover;
+}
+
+.headerTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  padding-left: 20px;
+  height: 90vh;
+  z-index: 5;
+}
+
+.headerTextContainer h2 {
+  font-family: var(--font-cursive), 'Nothing You Could Do', cursive;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 0);
+  text-shadow: 1px 5px 3px var(--bg-color);
+}
+
+.subtitleText {
+  margin-bottom: 20px;
+}
+
+.headerBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.zIndex {
+  position: relative;
+  z-index: 21;
+}
+
+/* ===== FLYING BIRDS ANIMATION ===== */
+/* Credit: Steven Roberts https://codepen.io/matchboxhero/pen/RLebOY */
+
+.birdsContainer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bird {
+  background-image: url('/assets/images/bird-cells-new.svg');
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+}
+
+.birdOne   { animation-duration: 1s;     animation-delay: -0.5s; }
+.birdTwo   { animation-duration: 0.9s;   animation-delay: -0.75s; }
+.birdThree { animation-duration: 1.25s;  animation-delay: -0.25s; }
+.birdFour  { animation-duration: 1.1s;   animation-delay: -0.5s; }
+
+@keyframes fly-cycle {
+  100% { background-position: -900px 0; }
+}
+
+.birdContainer {
+  position: absolute;
+  z-index: 20;
+  top: 26%;
+  left: -31%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (min-width: 700px) {
+  .birdContainer { left: -15%; }
+}
+
+.birdContainerOne   { animation-duration: 15s;    animation-delay: 0s; }
+.birdContainerTwo   { animation-duration: 16s;    animation-delay: 1s; }
+.birdContainerThree { animation-duration: 14.6s;  animation-delay: 9.5s;   animation-name: fly-right-two; }
+.birdContainerFour  { animation-duration: 16s;    animation-delay: 10.25s; animation-name: fly-right-two; }
+
+@keyframes fly-right-one {
+  0%   { transform: scale(0.3) translateX(-10vw); }
+  10%  { transform: translateY(2vh)  translateX(10vw)  scale(0.4); }
+  20%  { transform: translateY(0vh)  translateX(30vw)  scale(0.5); }
+  30%  { transform: translateY(4vh)  translateX(50vw)  scale(0.6); }
+  40%  { transform: translateY(2vh)  translateX(70vw)  scale(0.6); }
+  50%  { transform: translateY(0vh)  translateX(90vw)  scale(0.6); }
+  60%  { transform: translateY(0vh)  translateX(110vw) scale(0.6); }
+  100% { transform: translateY(0vh)  translateX(110vw) scale(0.6); }
+}
+
+@keyframes fly-right-two {
+  0%   { transform: translateY(-2vh)   translateX(-10vw)  scale(0.5); }
+  10%  { transform: translateY(0vh)    translateX(10vw)   scale(0.4); }
+  20%  { transform: translateY(-4vh)   translateX(30vw)   scale(0.6); }
+  30%  { transform: translateY(1vh)    translateX(50vw)   scale(0.45); }
+  40%  { transform: translateY(-2.5vh) translateX(70vw)   scale(0.5); }
+  50%  { transform: translateY(0vh)    translateX(90vw)   scale(0.45); }
+  51%  { transform: translateY(0vh)    translateX(110vw)  scale(0.45); }
+  100% { transform: translateY(0vh)    translateX(110vw)  scale(0.45); }
+}
+
+/* ===== DESKTOP ===== */
+@media screen and (min-width: 1025px) {
+  .headerTextContainer {
+    max-width: 46%;
+    padding-left: 270px;
+  }
+
+  .headerImg {
+    height: 90vh;
+  }
+}

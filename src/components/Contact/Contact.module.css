@@ -1,0 +1,138 @@
+/* ===== CONTACT SECTION ===== */
+.contactSection {
+  background-image: url('/assets/images/contact-bg.jpg');
+  max-width: 100%;
+  padding: 50px 0;
+  position: relative;
+}
+
+.contactOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(17, 17, 17, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.contactSection :global(h3) {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  max-width: 45%;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  z-index: 10;
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+/* Text side */
+.contactText {
+  position: relative;
+  bottom: 60px;
+}
+
+.contactText h4 {
+  color: var(--text-color-2);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.contactSubtitle { margin-bottom: 10px; }
+
+.contactText a { line-height: 1.5; }
+
+.contactSection :global(.fa),
+.contactSection :global(.fas),
+.contactSection :global(.fab) {
+  color: var(--text-color-2);
+  padding-right: 10px;
+}
+
+.contactSocialIcons { padding-top: 25px; }
+
+.contactSocialIcons a { margin-right: 20px; }
+
+/* Form */
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  background: #444;
+  border: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  outline-color: var(--btn-bg);
+  color: #f1f1f1;
+  font-family: inherit;
+}
+
+.halfWidthInput {
+  display: flex;
+  gap: 10px;
+}
+
+.submitBtn button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.formCheckbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+}
+
+.formCheckbox > span {
+  color: var(--text-color);
+  padding: 0 0 5px 5px;
+}
+
+.formCheckbox > input[type='checkbox'] {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  border: 1px solid #34495e;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: var(--text-color);
+  cursor: pointer;
+}
+
+.formCheckbox > input[type='checkbox']:checked {
+  background-color: var(--btn-bg);
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .contactContainer {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* .contactOverlay { height: 75%; } */
+
+  .contactText { max-width: 65%; }
+}

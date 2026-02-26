@@ -1,0 +1,33 @@
+/* ===== PORTFOLIO INDEX PAGE ===== */
+.pageMain {
+  padding-top: 80px; /* clear fixed navbar */
+  min-height: 100vh;
+}
+
+.pageHeader {
+  text-align: center;
+  padding: 80px 20px 20px;
+}
+
+.pageHeader h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  margin: 20px 0 10px;
+}
+
+.backLink {
+  margin-top: 12px !important;
+}
+
+.backLink a {
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: 0.95rem;
+  transition: opacity 300ms ease;
+}
+
+.backLink a:hover {
+  opacity: 1;
+  color: var(--hover-color);
+}

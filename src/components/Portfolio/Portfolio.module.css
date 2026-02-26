@@ -1,0 +1,133 @@
+/* ===== PORTFOLIO SECTION ===== */
+.portfolioSection {
+  max-width: 1750px;
+}
+
+.terminalLogo {
+  color: var(--text-color);
+  margin-bottom: 85px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.folioSubtitle {
+  max-width: 77%;
+  margin: auto;
+}
+
+.folioContainer {
+  padding: 50px 0 10px;
+}
+
+.filterList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.folioBtn {
+  background-color: transparent;
+  padding: 8px 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.folioBtn.active {
+  background-color: var(--btn-bg);
+  color: #fff;
+}
+
+.folioBtn:hover {
+  background-color: var(--hover-color);
+  transition: all 600ms ease-in-out;
+}
+
+/* Grid of items */
+.folioItemContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.folioItem {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  margin: 15px;
+  overflow: hidden;
+  padding: 2rem;
+  text-align: center;
+  border: 5px solid #555;
+  border-radius: 15px 0;
+}
+
+.folioImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.folioOverlay {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  gap: 5px;
+}
+
+.folioItem:hover .folioImage {
+  transition: all 600ms ease-in-out;
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.folioItem:hover .folioOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.previewBtn {
+  position: relative;
+  width: 150px;
+  color: var(--text-color);
+  background-color: var(--btn-bg);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.14rem;
+  font-weight: 600;
+  z-index: 50;
+  cursor: pointer;
+  border: none;
+}
+
+.previewBtn:hover {
+  color: var(--hover-color);
+  background-color: var(--btn-hover-bg);
+}
+
+/* View All CTA */
+.viewAllWrap {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px;
+}
+
+.viewAllBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  padding: 12px 30px;
+}

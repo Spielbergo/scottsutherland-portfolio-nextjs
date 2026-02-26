@@ -1,0 +1,34 @@
+/* ===== ABOUT SECTION ===== */
+.about {
+  position: relative;
+  height: auto;
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.aboutText {
+  width: 100%;
+}
+
+.aboutImg img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .aboutContainer {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 75px 0;
+  }
+
+  .aboutText {
+    padding-right: 75px;
+  }
+}
