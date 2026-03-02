@@ -3,7 +3,7 @@ export const projects = [
   {
     id: 17,
     featured: true,
-    category: 'javascript',
+    category: 'react',
     thumb: '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-card.webp',
     alt: 'Web Cheddar Next.js agency website screenshot',
     github: null,
@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 18,
     featured: true,
-    category: 'javascript',
+    category: 'react',
     thumb: '/assets/images/folio/clipifyit/clipifyit-card.webp',
     alt: 'ClipifyIt clipboard manager app screenshot',
     github: null,
@@ -37,7 +37,7 @@ export const projects = [
   {
     id: 14,
     featured: true,
-    category: 'javascript',
+    category: 'react',
     thumb: '/assets/images/folio/scottsutherland/scottsutherland.jpg',
     alt: 'Scott Sutherland Next.js portfolio site screenshot',
     github: 'https://github.com/Spielbergo/portfolio',
@@ -84,7 +84,7 @@ export const projects = [
   {
     id: 13,
     featured: true,
-    category: 'javascript',
+    category: 'grid',
     thumb: '/assets/images/folio/aquarium-demo/aquarium-hero-card.webp',
     alt: 'Annerley Aquarium website screenshot',
     github: null,
@@ -102,7 +102,7 @@ export const projects = [
   {
     id: 15,
     featured: true,
-    category: 'javascript',
+    category: 'grid',
     thumb: '/assets/images/folio/restaurant-demo/figma-restaurant-demo-card.webp',
     alt: 'Dine Restaurant website screenshot',
     github: 'https://github.com/Spielbergo/figma-restaurant-wp',
@@ -345,7 +345,8 @@ export const projects = [
 
 export const filterCategories = [
   { id: 'all',        label: 'All' },
-  { id: 'bootstrap',  label: 'Bootstrap' },
   { id: 'grid',       label: 'Flex/Grid' },
-  { id: 'javascript', label: 'JS Projects' },
+  { id: 'javascript', label: 'JavaScript' }, 
+  { id: 'react',      label: 'React/Next.js' },  
+  { id: 'bootstrap',  label: 'Bootstrap' },
 ];

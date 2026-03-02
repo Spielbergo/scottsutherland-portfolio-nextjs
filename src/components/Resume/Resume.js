@@ -136,7 +136,8 @@ export default function Resume() {
         <li><i className="fab fa-html5" style={{ color: 'red' }} aria-label="HTML5" role="img" /></li>
         <li><i className="fab fa-css3" style={{ color: 'blue' }} aria-label="CSS3" role="img" /></li>
         <li><i className="fab fa-js" style={{ color: 'yellow' }} aria-label="JavaScript" role="img" /></li>
-        <li><i className="fab fa-react" style={{ color: '#88dded' }} aria-label="React" role="img" /></li>
+        <li><i className="fab fa-react" style={{ color: '#61dbfb' }} aria-label="React" role="img" /></li>
+        <li><Image src="/assets/images/logos/nextjs-icon.svg" width={38} height={38} aria-label="Next.js" alt="Next.js" role="img" /></li>
         <li><i className="fab fa-php" style={{ color: 'skyblue' }} aria-label="PHP" role="img" /></li>
         <li><i className="fab fa-wordpress" aria-label="WordPress" role="img" /></li>
       </ul>

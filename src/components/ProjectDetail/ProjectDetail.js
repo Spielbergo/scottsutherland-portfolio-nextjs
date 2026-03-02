@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './ProjectDetail.module.css';
+import ScreenshotsLightbox from './ScreenshotsLightbox';
 
 export default function ProjectDetail({ project }) {
   const { hero, overview, screenshots, sectionsTable, techStack, highlights, lighthouse, lighthouseImage, codeBlock, notesSection } = project;
@@ -113,28 +114,10 @@ export default function ProjectDetail({ project }) {
         <section className={styles.screenshotsSection} aria-labelledby="screenshots-heading">
           <div className={styles.sectionInner}>
             <h2 id="screenshots-heading">Screen<span>shots</span></h2>
-            <div className={styles.screenshotGrid}>
-              {screenshots.map((shot, i) => (
-                <figure key={i} className={styles.screenshotFigure}>
-                  <div className={styles.screenshotImgWrap}>
-                    <Image
-                      src={shot.src}
-                      alt={shot.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className={styles.screenshotImg}
-                      priority={shot.eager}
-                    />
-                  </div>
-                  <figcaption className={styles.screenshotCaption}>{shot.caption}</figcaption>
-                </figure>
-              ))}
-            </div>
+            <ScreenshotsLightbox screenshots={screenshots} />
           </div>
         </section>
         
-        
-
         {/* ===== HIGHLIGHTS ===== */}
         <section className={styles.highlightsSection} aria-labelledby="highlights-heading">
           <div className={styles.sectionInner}>

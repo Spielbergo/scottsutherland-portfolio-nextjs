@@ -92,42 +92,47 @@ export default function Navbar() {
         data-aos-duration="1000"
       >
         <li>
-          <a
+          <Link
             href={isHome ? '#home' : '/'}
             className={`${isHome ? styles.navActive : ''} ${styles.navLink}`}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href={href('about')} className={styles.navLink}>
+          <Link href={href('about')} className={styles.navLink}>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href={href('resume')} className={styles.navLink}>
+          <Link href={href('resume')} className={styles.navLink}>
             Resume
-          </a>
+          </Link>
         </li>
         <li className={styles.navLogo}>
-          <a href={isHome ? '#home' : '/'}>
+          <Link href={isHome ? '#home' : '/'}>
             <Image
-              src="/assets/images/logo.png"
+              src="/assets/images/logos/logo.webp"
               alt="Scott Sutherland Logo"
               width={100}
               height={100}
             />
-          </a>
+          </Link>
         </li>
         <li>
-          <a href={href('portfolio')} className={styles.navLink}>
+          <Link href={href('portfolio')} className={styles.navLink}>
+            Featured
+          </Link>
+        </li>
+        <li>
+          <Link href="/portfolio" className={styles.navLink}>
             Portfolio
-          </a>
+          </Link>
         </li>
         <li>
-          <a href={href('contact')} className={styles.navLink}>
+          <Link href={href('contact')} className={styles.navLink}>
             Contact
-          </a>
+          </Link>
         </li>
         <hr className={styles.navDivider} />
         <div className={styles.contactIcons}>

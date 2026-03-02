@@ -4,6 +4,11 @@
  *
  * Required fields: slug, meta, hero, overview, screenshots, sectionsTable, techStack, highlights
  * Optional fields: lighthouse, lighthouseImage, codeBlock, notesSection
+ *
+ * screenshots[] entry shape:
+ *   { src, alt, caption, eager?, fullSrc? }
+ *   src     — card thumbnail (shown in the grid)
+ *   fullSrc — full-resolution image shown in the lightbox (optional; falls back to src if omitted)
  */
 export const projectPages = [
 
@@ -834,7 +839,7 @@ python -m http.server 5500`,
     },
 
     hero: {
-      bg:       '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-card.webp',
+      bg:       '/assets/images/folio/webcheddar-nextjs/web-chedddar-hero-bg.webp',
       title:    'Web Cheddar',
       subtitle: 'Production Next.js marketing site for a small web studio — modular components, CSS Modules, dynamic routing, and a serverless contact API.',
       badges:   ['Next.js', 'React', 'CSS Modules', 'Nodemailer', 'Dynamic Routes', 'App Router'],
@@ -856,46 +861,66 @@ python -m http.server 5500`,
     screenshots: [
       {
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-card.webp',
+        fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-large.webp',
         alt:     'Web Cheddar hero section',
         caption: 'Hero — Full-bleed section with CTAs and optimised imagery',
         eager:   true,
       },
+      // {
+      //   src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-nav.webp',
+      //   alt:     'Web Cheddar navigation',
+      //   caption: 'Navigation — Sticky header with responsive mobile nav and accessible focus states',
+      // },
       {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-nav.webp',
-        alt:     'Web Cheddar navigation',
-        caption: 'Navigation — Sticky header with responsive mobile nav and accessible focus states',
-      },
-      {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-services.webp',
+        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-item-card.webp',
+        fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-item-large.webp',
         alt:     'Web Cheddar services section',
         caption: 'Services — Service index with dynamic detail pages at /services/[slug]',
       },
       {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-blog.webp',
+        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-blog-card.webp',
+        fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-blog-large.webp',
         alt:     'Web Cheddar blog section',
         caption: 'Blog — Article listing and dynamic post pages at /blog/[slug]',
       },
       {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-clients.webp',
+        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-testimonials-card.webp',
+        fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-testimonials-large.webp',
         alt:     'Web Cheddar clients and testimonials section',
         caption: 'Clients & Testimonials — Client logo grid and testimonial carousel',
       },
+      // {
+      //   src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-devtools-card.webp',
+      //   fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-devtools-large.webp',
+      //   alt:     'Web Cheddar devtools section',
+      //   caption: 'Devtools — Colour palette & gradient generator utilities',
+      // },
       {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-devtools.webp',
-        alt:     'Web Cheddar devtools section',
-        caption: 'Devtools — Colour palette & gradient generator utilities',
-      },
-      {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-contact.webp',
+        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-contact-card.webp',
+        fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-contact-large.webp',
         alt:     'Web Cheddar contact form',
         caption: 'Contact — 4-field form with serverless Nodemailer API route',
       },
       {
-        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-footer.webp',
-        alt:     'Web Cheddar footer',
-        caption: 'Footer — Semantic footer with dynamic copyright year and link columns',
+        src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-page-card.webp',
+        fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-page-large.webp',
+        alt:     'Web Cheddar Services Overview page',
+        caption: 'Services Overview — Overview of available services',
       },
     ],
+
+    // lighthouse: [
+    //   { label: 'Performance',    score: 99  },
+    //   { label: 'Accessibility',  score: 100 },
+    //   { label: 'Best Practices', score: 100 },
+    //   { label: 'SEO',            score: 100 },
+    // ],
+
+    // lighthouseImage: {
+    //   src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-lighthouse.webp',
+    //   alt:     'Lighthouse scores screenshot',
+    //   caption: 'Lighthouse — 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
+    // },
 
     sectionsTable: {
       heading:  'Sections & Pages',
@@ -956,19 +981,19 @@ python -m http.server 5500`,
         detail: 'Scoped component styling — no utility frameworks, small bundle sizes',
       },
       {
-        icon:   'fab fa-js',
+        icon:   'fab fa-css3',
         label:  'Modern CSS',
         detail: 'CSS Grid, Flexbox, custom properties, clamp() for fluid typography',
       },
       {
         icon:   'fas fa-envelope',
         label:  'Nodemailer',
-        detail: 'Contact form submissions handled via a Next.js serverless API route',
+        detail: 'Contact form submissions handled via a Next.js serverless API route and sent via SMTP',
       },
       {
         icon:   'fab fa-wordpress',
         label:  'WordPress (Headless CMS)',
-        detail: 'WordPress powers the blog as a headless CMS — Next.js consumes the REST API to fetch and render posts',
+        detail: 'WordPress powers the blog as a headless CMS — Next.js consumes the REST API to render posts',
       },
       {
         icon:   'fas fa-route',
@@ -1047,10 +1072,10 @@ npm run dev`,
     },
 
     hero: {
-      bg:       '/assets/images/folio/clipifyit/clipifyit-card.webp',
+      bg:       '/assets/images/folio/clipifyit/clipifyit-hero-large.webp',
       title:    'ClipifyIt',
       subtitle: 'A full-stack Next.js clipboard manager — save URLs to read offline, share articles straight from Android, compress and compare clipboard content, with user auth and optional cloud integrations.',
-      badges:   ['Next.js', 'React', 'CSS Modules', 'PWA / Offline', 'Web Share Target', 'Supabase', 'Stripe', 'AWS Amplify', 'React Context', 'SEO'],
+      badges:   ['Next.js', 'CSS Modules', 'PWA / Offline', 'Web Share Target', 'Supabase', 'Stripe', 'AWS Amplify', 'React Context', 'SEO'],
       actions:  [
         {
           label: 'Live Site',
@@ -1061,9 +1086,9 @@ npm run dev`,
     },
 
     overview: [
-      'ClipifyIt is a web application for capturing, managing, compressing, and sharing clipboard content. Built with Next.js and React, it demonstrates real-world application architecture: modular components, authentication flows, React Context for global state, and integration-ready hooks for cloud services.',
+      'ClipifyIt is a web application for capturing, managing, compressing, and sharing clipboard content. Built with Next.js, it demonstrates real-world application architecture: modular components, authentication flows, React Context for global state, and integration-ready hooks for cloud services.',
       'A standout feature is offline-ready saved articles. Users can save any URL directly to their account and access the content later — no internet connection required. This makes ClipifyIt particularly useful when travelling, commuting, or during outages. On Android, users can share a link from any browser or app straight to ClipifyIt using the native share sheet, without ever opening the app manually.',
-      'The project is built with extensibility in mind — optional integrations for Supabase (database & auth), Stripe (payments), and AWS Amplify (cloud infrastructure) can be enabled via environment variables, making it a practical showcase of how modern web apps are structured for production. Server-rendered pages and full SEO metadata ensure the public-facing content is crawlable and ranks well.',
+      'The project is built with extensibility in mind — integrations for Supabase (database & auth), Stripe (payments), and AWS Amplify (cloud infrastructure) can be found, making it a practical showcase of how modern web apps are structured for production. Server-rendered pages and full SEO metadata ensure the public-facing content is crawlable and ranks well.',
     ],
 
     screenshots: [
