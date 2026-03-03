@@ -482,6 +482,11 @@ npm run dev   # → http://localhost:3000`,
           icon:  'fa fa-drafting-compass',
           href:  'https://www.figma.com/design/ei3zWP52RjnbSy2as18pP9/Restaurant-Website--Community-?node-id=0-1&t=6YqTGbO1bZOIZq8d-1',
         },
+        {
+          label: 'Live Demo',
+          icon:  'fa fa-external-link-alt',
+          href:  '/projects/figma-restaurant-demo/index.html',
+        },
       ],
     },
 
@@ -492,33 +497,33 @@ npm run dev   # → http://localhost:3000`,
 
     screenshots: [
       {
-        src:     'https://placehold.co/900x500/1a0a00/f5be32?text=Hero+Section',
+        src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-hero-large-card.webp',
         alt:     'Dine Restaurant hero section',
         caption: 'Hero — Full-bleed dark background with headline and single CTA button',
         eager:   true,
       },
       {
-        src:     'https://placehold.co/900x500/1a0a00/f5be32?text=Today%27s+Special',
+        src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-specials-large-card.webp',
         alt:     "Today's Special section",
         caption: "Today's Special — 3-card grid with star ratings and order buttons",
       },
       {
-        src:     'https://placehold.co/900x500/1a0a00/f5be32?text=Our+Specialties',
+        src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-specialties-large-card.webp', 
         alt:     'Our Specialties section',
         caption: 'Our Specialties — 7 filter buttons, alternating image + content layout',
       },
       {
-        src:     'https://placehold.co/900x500/1a0a00/f5be32?text=Dining+Events',
+        src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-dining-large-card.webp',
         alt:     'Dining Events section',
-        caption: 'Dining Events — Private/Corporate toggle with 3 tiered packages',
+        caption: 'Events — Private/Corporate toggle with 3 tiered packages',
       },
       {
-        src:     'https://placehold.co/900x500/1a0a00/f5be32?text=Our+Story',
+        src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-story-large-card.webp',
         alt:     'Our Story section',
         caption: 'Our Story — Two-column layout with stacked chef images and brand text',
       },
       {
-        src:     'https://placehold.co/900x500/1a0a00/f5be32?text=Footer+%26+Contact',
+        src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-footer-large-card.webp',
         alt:     'Footer and contact section',
         caption: 'Footer — Full-bleed CTA, address, SVG icons, reservation button, social links',
       },
@@ -586,6 +591,11 @@ npm run dev   # → http://localhost:3000`,
         icon:   'fab fa-js',
         label:  'Vanilla JavaScript',
         detail: 'Mobile nav drawer, scroll-triggered header, menu filter buttons, smooth scroll',
+      },
+      {
+        icon:   'fas fa-universal-access',
+        label:  'Accessibility',
+        detail: 'ARIA attributes, screen-reader friendly markup, focus management, and keyboard navigation',
       },
       {
         icon:   'fab fa-google',
@@ -666,11 +676,21 @@ python -m http.server 5500`,
     },
 
     hero: {
-      bg:       'https://placehold.co/1920x800/0a0a0a/9b59f7?text=Dezign+Portfolio',
+      bg:       '',
       title:    'Dezign — Designer Portfolio',
       subtitle: 'A hand-coded, accessible, and performance-minded static portfolio site built from a Figma concept — showcasing UI/UX and interaction design work.',
       badges:   ['HTML5', 'CSS3', 'Vanilla JS', 'Zero Dependencies', 'Figma-to-Code', 'Google Fonts'],
-      actions:  [],
+      actions:  [
+        {
+          label: 'Figma Design',
+          icon:  'fa fa-drafting-compass',
+          href:  'https://www.figma.com/design/fgRxOG3GWtFGP3yiCxJD3F/Portfolio--Community-?node-id=2-339&t=lxZw68jvls34qizq-1',
+        },{
+          label: 'Live Demo',
+          icon:  'fa fa-external-link-alt',
+          href:  '/projects/figma-portfolio-demo/index.html',
+        },
+      ],
     },
 
     overview: [
@@ -680,32 +700,44 @@ python -m http.server 5500`,
 
     screenshots: [
       {
-        src:     'https://placehold.co/900x500/0a0a0a/9b59f7?text=Hero+Section',
+        src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-hero-card.webp',
+        fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-hero-large.webp',
         alt:     'Dezign hero section',
         caption: 'Hero — Dark background with headline and scroll indicator',
         eager:   true,
       },
       {
-        src:     'https://placehold.co/900x500/0a0a0a/9b59f7?text=Clients+Grid',
+        src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-clients-grid-card.webp',
+        fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-clients-grid-large.webp', 
         alt:     'Clients grid section',
         caption: 'Clients — Airbnb, Google, Microsoft, FedEx placeholder logos in a grid',
       },
       {
-        src:     'https://placehold.co/900x500/0a0a0a/9b59f7?text=Works+Grid',
+        src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-selected-works-card.webp',
+        fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-selected-works-large.webp',
         alt:     'Works grid section',
         caption: 'Works — Project cards with images, categories, and CTAs',
       },
       {
-        src:     'https://placehold.co/900x500/0a0a0a/9b59f7?text=About+Section',
+        src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-about-card.webp',
+        fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-about-large.webp',
         alt:     'About section',
         caption: 'About — Short bio and image grid layout',
       },
-      {
-        src:     'https://placehold.co/900x500/0a0a0a/9b59f7?text=Contact+%26+Footer',
-        alt:     'Contact and footer section',
-        caption: 'Contact — Social links, footer, and Get in Touch headline',
-      },
     ],
+
+    lighthouse: [
+      { label: 'Performance',    score: 100  },
+      { label: 'Accessibility',  score: 100 },
+      { label: 'Best Practices', score: 100 },
+      { label: 'SEO',            score: 100 },
+    ],
+
+    lighthouseImage: {
+      src:     '/assets/images/folio/designer-portfolio-demo/designer-portfolio-lighthouse.webp',
+      alt:     'Lighthouse scores screenshot',
+      caption: 'Lighthouse — 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
+    },
 
     sectionsTable: {
       heading:  'Sections Built',
@@ -759,6 +791,11 @@ python -m http.server 5500`,
         icon:   'fab fa-js',
         label:  'Vanilla JavaScript',
         detail: 'Mobile nav toggle, smooth scroll, and minimal interaction scripts',
+      },
+      {
+        icon:   'fas fa-universal-access',
+        label:  'Accessibility',
+        detail: 'ARIA attributes, screen-reader friendly markup, focus management, and keyboard navigation',
       },
       {
         icon:   'fab fa-google',

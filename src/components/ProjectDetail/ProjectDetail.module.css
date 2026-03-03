@@ -27,6 +27,7 @@
 .projectHeroContent {
   position: relative;
   z-index: 2;
+  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
 }
