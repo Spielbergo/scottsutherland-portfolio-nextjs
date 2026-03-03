@@ -115,9 +115,8 @@ button,
     font-family: inherit;
 }
 
-button:hover,
 .button:hover {
-    color: var(--hover-color-2);
+    color: var(--hover-color);
     background-color: var(--btn-hover-bg);
 }
 

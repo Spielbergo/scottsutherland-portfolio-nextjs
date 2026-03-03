@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,6 +11,17 @@ export default function Navbar() {
   const mobileNavRef = useRef(null);
   const pathname = usePathname();
   const isHome = pathname === '/';
+  const isPortfolio = pathname === '/portfolio';
+
+  // Track which section is in view — only meaningful on the home page.
+  // Driving this from React state (not DOM classList) means highlights
+  // are always in sync with the current route and never go stale.
+  const [activeSection, setActiveSection] = useState('');
+
+  // Clear section state whenever we leave (or arrive at) a non-home route
+  useEffect(() => {
+    if (!isHome) setActiveSection('');
+  }, [isHome]);
 
   useEffect(() => {
     const hamburger = hamburgerRef.current;
@@ -37,7 +48,7 @@ export default function Navbar() {
       }
     };
 
-    // Close on nav link click
+    // Close drawer on any nav link click
     const navLinks = navMenu.querySelectorAll('.' + styles.navLink);
     const closeMenu = () => {
       hamburger.setAttribute('aria-expanded', 'false');
@@ -45,30 +56,27 @@ export default function Navbar() {
       navMenu.classList.remove(styles.mobileActive);
     };
 
-    // Nav highlight on scroll — home page only (sections exist here)
+    // Update activeSection state based on scroll position — home only.
+    // Uses the "last section whose top edge has passed" approach.
     const highlightNav = () => {
       const sections = document.querySelectorAll('section[id]');
       const scrollY = window.pageYOffset;
-      sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 100;
-        const sectionId = current.getAttribute('id');
-        const link = navMenu.querySelector(`a[href*=${sectionId}]`);
-        if (!link) return;
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          link.classList.add(styles.navActive);
-          link.setAttribute('aria-current', 'true');
-        } else {
-          link.classList.remove(styles.navActive);
-          link.removeAttribute('aria-current');
+      let current = 'home'; // default to home when at the very top
+      sections.forEach((section) => {
+        if (scrollY >= section.offsetTop - 120) {
+          current = section.getAttribute('id');
         }
       });
+      setActiveSection(current);
     };
 
     hamburger.addEventListener('click', handleHamburger);
     navLinks.forEach((link) => link.addEventListener('click', closeMenu));
     window.addEventListener('scroll', handleScroll);
-    if (isHome) window.addEventListener('scroll', highlightNav);
+    if (isHome) {
+      highlightNav(); // set correct state immediately on mount
+      window.addEventListener('scroll', highlightNav);
+    }
 
     return () => {
       hamburger.removeEventListener('click', handleHamburger);
@@ -78,8 +86,14 @@ export default function Navbar() {
     };
   }, [isHome]);
 
-  // On home page use anchor links; on sub-pages use /#section hrefs
+  // Anchor helpers
   const href = (section) => (isHome ? `#${section}` : `/#${section}`);
+
+  // Returns navActive class only when the given section is current (home only)
+  const sc = (id) =>
+    isHome && activeSection === id
+      ? `${styles.navLink} ${styles.navActive}`
+      : styles.navLink;
 
   return (
     <nav className={styles.navbar} aria-label="Main navigation">
@@ -87,25 +101,19 @@ export default function Navbar() {
         id="navbarItems"
         ref={navMenuRef}
         className={styles.navbarItems}
-        data-aos="fade-down"
-        data-aos-delay="400"
-        data-aos-duration="1000"
       >
         <li>
-          <Link
-            href={isHome ? '#home' : '/'}
-            className={`${isHome ? styles.navActive : ''} ${styles.navLink}`}
-          >
+          <Link href={isHome ? '#home' : '/'} className={sc('home')}>
             Home
           </Link>
         </li>
         <li>
-          <Link href={href('about')} className={styles.navLink}>
-            About
+          <Link href={href('about')} className={sc('about')}>
+            About Scott
           </Link>
         </li>
         <li>
-          <Link href={href('resume')} className={styles.navLink}>
+          <Link href={href('resume')} className={sc('resume')}>
             Resume
           </Link>
         </li>
@@ -120,17 +128,20 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href={href('portfolio')} className={styles.navLink}>
+          <Link href={href('portfolio')} className={sc('portfolio')}>
             Featured
           </Link>
         </li>
         <li>
-          <Link href="/portfolio" className={styles.navLink}>
+          <Link
+            href="/portfolio"
+            className={isPortfolio ? `${styles.navLink} ${styles.navActive}` : styles.navLink}
+          >
             Portfolio
           </Link>
         </li>
         <li>
-          <Link href={href('contact')} className={styles.navLink}>
+          <Link href={href('contact')} className={sc('contact')}>
             Contact
           </Link>
         </li>
@@ -164,7 +175,7 @@ export default function Navbar() {
         </div>
       </ul>
 
-      {/* Mobile nav bar */}
+      {/* Mobile top bar */}
       <div ref={mobileNavRef} className={styles.mobileNavContainer}>
         <Image
           src="/assets/images/logo.png"

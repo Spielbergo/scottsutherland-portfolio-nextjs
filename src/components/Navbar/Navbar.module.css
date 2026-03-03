@@ -3,16 +3,18 @@
   font-weight: 900;
 }
 
-/* Mobile container (fixed top bar) */
+/* ─── MOBILE TOP BAR ─── */
 .mobileNavContainer {
   display: flex;
-  align-self: center;
+  align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 60px;
   z-index: 1005;
   background: transparent;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .mobileNavContainer img {
@@ -26,145 +28,239 @@
   display: none;
   height: 60px;
   margin-bottom: 0;
+  align-items: center;
+  color: #f1f1f1;
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .mobileNavScroll {
-  background-color: #222;
-  box-shadow: 5px 5px 5px #333;
-  transition-duration: 0.5s;
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .mobileNavScroll img,
 .mobileNavScroll p {
   display: flex;
-  align-items: center;
-  transition-duration: 0.5s;
 }
 
-/* Hamburger */
+/* ─── HAMBURGER ─── */
 .hamburger {
   position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 1003;
-  display: block;
+  top: 14px;
+  right: 16px;
+  z-index: 1010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: pointer;
   background: none;
   border: none;
-  padding: 4px;
-  line-height: 0;
+  padding: 6px;
+  gap: 0;
+}
+
+.hamburger button {
+  background: transparent;
+  border: none;
 }
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
+  width: 26px;
+  height: 2px;
+  margin: 4px 0;
   background-color: #f1f1f1;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .active .bar:nth-child(2) { opacity: 0; }
-.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.active .bar:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+.active .bar:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
 
-/* Nav items list */
+/* ─── NAV DRAWER (mobile) ─── */
 .navbarItems {
+  /* Slide-in panel from the right */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
-  left: 0;
-  z-index: 998;
-  width: 0;
-  padding: 90px 0 20px;
-  background-color: var(--bg-color);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 280px;
+  padding: 90px 0 32px;
+  background: #111;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: -6px 0 32px rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   visibility: hidden;
-  opacity: 1;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0.35s;
 }
 
 .mobileActive {
   visibility: visible;
-  opacity: 1;
-  width: 100%;
-  transition-duration: 0.5s;
+  pointer-events: auto;
+  transform: translateX(0);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0s;
 }
 
 .navbarItems li {
-  margin: 10px 15px;
-  text-align: center;
-  background-color: var(--bg-color);
+  width: 100%;
+  margin: 0;
+  background: transparent;
+}
+
+.navLink {
+  display: block;
+  width: 100%;
+  padding: 13px 32px;
+  color: #ccc;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  transition: color 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .navLogo { display: none; }
 
 .navActive {
-  color: var(--hover-color);
-  font-size: 18px;
-  display: block;
+  color: var(--hover-color) !important;
 }
 
-/* Contact icons */
-.contactIcons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.contactIcons i {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
+/* ─── DIVIDER & SOCIAL ICONS (mobile drawer) ─── */
 .navDivider {
-  margin-top: 15px;
-  width: 80%;
+  width: calc(100% - 64px);
+  margin: 16px 32px;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ===== DESKTOP (1025px+) ===== */
+.contactIcons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 32px;
+  margin-top: 8px;
+}
+
+.contactIcons a {
+  color: #aaa;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.contactIcons a:hover {
+  color: #fff;
+}
+
+/* ═══ DESKTOP 1025px+ ═══ */
+@keyframes navFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .hamburger { display: none; }
 
+  /* Social icons — fixed top-right, out of the flex flow */
   .contactIcons {
     position: fixed;
-    top: 20px;
     right: 0;
     z-index: 1000;
-    font-size: 30px;
-    background-color: transparent;
     margin-top: 0;
-    padding-right: 20px;
+    padding: 0 20px 0 0;
+    gap: 0;
+    background: transparent;
+    border-left: none;
+    box-shadow: none;
   }
 
-  .contactIcons i { font-size: 16px; }
+  .contactIcons a {
+    font-size: 16px;
+    margin: 0 8px;
+    color: inherit;
+  }
 
+  /* Full-width centered nav bar */
   .navbarItems {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: fixed;
     top: 20px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
     height: 50px;
     padding: 40px 0;
-    opacity: 0.9 !important;
+    border: none;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+    border-left: none;
+    box-shadow: none;
+    opacity: 0.9;
     visibility: visible;
-    width: 100%;
+    pointer-events: auto;
+    transform: none;
+    transition: none;
+    animation: navFadeDown 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
   }
 
-  .navbarItems li { background-color: transparent; }
+  .navbarItems li {
+    width: auto;
+    background: transparent;
+  }
 
-  .navLogo,
   .navLink {
-    position: relative;
-    right: 20px;
+    display: inline;
+    width: auto;
+    padding: 0;
+    font-size: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background: transparent;
+  }
+
+  .navLink:hover {
+    background: transparent;
   }
 
   .navLogo {
     display: flex;
     padding: 0;
+    margin: 0 15px;
+  }
+
+  .navbarItems li {
+    margin: 0 15px;
+    text-align: center;
   }
 
   .mobileNavContainer { visibility: hidden; }
   .navDivider { display: none; }
+
+  /* Keep active colour only, no size change */
+  .navActive {
+    color: var(--hover-color) !important;
+    font-size: inherit;
+  }
 }
+

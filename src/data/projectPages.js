@@ -257,37 +257,37 @@ python -m http.server 5500`,
     ],
 
     screenshots: [
-      {
-        src:     'https://placehold.co/900x500/0a0a0a/ffffff?text=Home+Page',
-        alt:     'Home page screenshot',
-        caption: 'Home — full-page layout with all original sections preserved',
-        eager:   true,
-      },
-      {
-        src:     'https://placehold.co/900x500/1a1a2e/ffffff?text=Hero+%26+Birds+Animation',
-        alt:     'Hero section screenshot',
-        caption: 'Hero — birds CSS animation ported intact from vanilla CSS',
-      },
-      {
-        src:     'https://placehold.co/900x500/16213e/ffffff?text=Portfolio+Section+%26+Modal',
-        alt:     'Portfolio section screenshot',
-        caption: 'Portfolio — client-side filter and image/video modal slider',
-      },
-      {
-        src:     'https://placehold.co/900x500/0f3460/ffffff?text=Resume+Timeline',
-        alt:     'Resume section screenshot',
-        caption: 'Resume — animated timeline, skill bars, and testimonials',
-      },
-      {
-        src:     'https://placehold.co/900x500/1a2a1a/ffffff?text=Contact+Form',
-        alt:     'Contact form screenshot',
-        caption: 'Contact — controlled form posting to Next.js Nodemailer API route',
-      },
-      {
-        src:     'https://placehold.co/900x500/2a1a0a/ffffff?text=Aquarium+Project+Page',
-        alt:     'Aquarium project detail page screenshot',
-        caption: 'Project Pages — each project gets a dedicated detail route',
-      },
+      // {
+      //   src:     'https://placehold.co/900x500/0a0a0a/ffffff?text=Home+Page',
+      //   alt:     'Home page screenshot',
+      //   caption: 'Home — full-page layout with all original sections preserved',
+      //   eager:   true,
+      // },
+      // {
+      //   src:     'https://placehold.co/900x500/1a1a2e/ffffff?text=Hero+%26+Birds+Animation',
+      //   alt:     'Hero section screenshot',
+      //   caption: 'Hero — birds CSS animation ported intact from vanilla CSS',
+      // },
+      // {
+      //   src:     'https://placehold.co/900x500/16213e/ffffff?text=Portfolio+Section+%26+Modal',
+      //   alt:     'Portfolio section screenshot',
+      //   caption: 'Portfolio — client-side filter and image/video modal slider',
+      // },
+      // {
+      //   src:     'https://placehold.co/900x500/0f3460/ffffff?text=Resume+Timeline',
+      //   alt:     'Resume section screenshot',
+      //   caption: 'Resume — animated timeline, skill bars, and testimonials',
+      // },
+      // {
+      //   src:     'https://placehold.co/900x500/1a2a1a/ffffff?text=Contact+Form',
+      //   alt:     'Contact form screenshot',
+      //   caption: 'Contact — controlled form posting to Next.js Nodemailer API route',
+      // },
+      // {
+      //   src:     'https://placehold.co/900x500/2a1a0a/ffffff?text=Aquarium+Project+Page',
+      //   alt:     'Aquarium project detail page screenshot',
+      //   caption: 'Project Pages — each project gets a dedicated detail route',
+      // },
     ],
 
     sectionsTable: {
@@ -1131,30 +1131,32 @@ npm run dev`,
     screenshots: [
       {
         src:     '/assets/images/folio/clipifyit/clipifyit-card.webp',
+        fullSrc: '/assets/images/folio/clipifyit/clipifyit-free-large-full.webp',
         alt:     'ClipifyIt app screenshot',
         caption: 'ClipifyIt — Clipboard manager dashboard',
         eager:   true,
       },
       {
-        src:     '/assets/images/folio/clipifyit/clipifyit-clipboard.webp',
+        src:     '/assets/images/folio/clipifyit/clipifyit-free-large-card.webp',
+        fullSrc: '/assets/images/folio/clipifyit/clipifyit-free-large-large.webp',
         alt:     'ClipifyIt clipboard list view',
-        caption: 'Clipboard UI — Persistent lists with item controls',
+        caption: 'ClipifyIt Free Version — items stored in local storage',
       },
-      {
-        src:     '/assets/images/folio/clipifyit/clipifyit-compression.webp',
-        alt:     'ClipifyIt compression tools',
-        caption: 'Compression & Comparison — Tools to compress and diff clipboard content',
-      },
-      {
-        src:     '/assets/images/folio/clipifyit/clipifyit-dashboard.webp',
-        alt:     'ClipifyIt dashboard and controls',
-        caption: 'Dashboard — User controls, saved articles, and clipboard history',
-      },
-      {
-        src:     '/assets/images/folio/clipifyit/clipifyit-auth.webp',
-        alt:     'ClipifyIt auth flow',
-        caption: 'Auth — Authentication provider with user session context',
-      },
+      // {
+      //   src:     '/assets/images/folio/clipifyit/clipifyit-compression.webp',
+      //   alt:     'ClipifyIt compression tools',
+      //   caption: 'Compression & Comparison — Tools to compress and diff clipboard content',
+      // },
+      // {
+      //   src:     '/assets/images/folio/clipifyit/clipifyit-dashboard.webp',
+      //   alt:     'ClipifyIt dashboard and controls',
+      //   caption: 'Dashboard — User controls, saved articles, and clipboard history',
+      // },
+      // {
+      //   src:     '/assets/images/folio/clipifyit/clipifyit-auth.webp',
+      //   alt:     'ClipifyIt auth flow',
+      //   caption: 'Auth — Authentication provider with user session context',
+      // },
     ],
 
     sectionsTable: {
