@@ -23,24 +23,10 @@ export default function About() {
           <h3 id="about-heading">
             About <span>Me</span>
           </h3>
-          <p>
-            I am a Toronto based Front End Developer. I have been working freelance on the side
-            since February of 2019 and I have been working with a company working almost
-            exclusively on WordPress sites since January of 2020.
-          </p>
-          <p>
-            After my full time job ended in May of 2020 I took the time to learn. I took online
-            courses from Zero to Mastery and freecodecamp among others. I concentrated mainly on
-            CSS and JavaScript.
-          </p>
-          <p>
-            Over the last few years I have also learned products such PhotoShop, After Effects,
-            Keap, Zoho, Zapier and more.
-          </p>
-          <p>
-            I love the constant learning and problem solving mixed with a little creativity that
-            comes with development!
-          </p>
+          <p>I am a self-taught Front-End Developer based in Toronto since 2019 with hands-on
+          experience building, optimizing, and maintaining high-performance websites. Strong focus on HTML, CSS, JavaScript, React, Next.js, and WordPress performance optimization and accessibility. Proven ability to refactor bloated systems, improve page speed, and deliver responsive, scalable, security-conscious solutions.</p>
+
+          <p>Experienced with SEO, analytics, and modern dev tools and comfortable working independently or on small teams. Front-End Developer specializing in performance optimization and scalable web solutions.</p>
         </div>
 
         <div
