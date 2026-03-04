@@ -71,7 +71,7 @@ export const projects = [
     thumb: '/assets/images/folio/designer-portfolio-demo/figma-portfolio-demo-card.webp',
     alt: 'Dezign designer portfolio website screenshot',
     github: 'https://github.com/Spielbergo/figma-portfolio-wp',
-    live: null,
+    live: 'https://scottsutherland.info/projects/figma-portfolio-demo/index.html',
     detailPage: '/project-pages/dezign-portfolio',
     slides: [
       {
@@ -87,8 +87,8 @@ export const projects = [
     category: 'grid',
     thumb: '/assets/images/folio/aquarium-demo/aquarium-hero-card.webp',
     alt: 'Annerley Aquarium website screenshot',
-    github: null,
-    live: null,
+    github: 'https://github.com/Spielbergo/figma-aquarium-demo',
+    live: 'https://scottsutherland.info/projects/figma-aquarium-demo/index.html',
     detailPage: '/project-pages/aquarium-demo',
     slides: [
       {
@@ -106,7 +106,7 @@ export const projects = [
     thumb: '/assets/images/folio/restaurant-demo/figma-restaurant-demo-card.webp',
     alt: 'Dine Restaurant website screenshot',
     github: 'https://github.com/Spielbergo/figma-restaurant-wp',
-    live: null,
+    live: 'https://scottsutherland.info/projects/figma-restaurant-demo/index.html',
     detailPage: '/project-pages/dine-restaurant',
     slides: [
       {
