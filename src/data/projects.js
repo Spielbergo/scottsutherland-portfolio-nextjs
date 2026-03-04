@@ -38,7 +38,7 @@ export const projects = [
     id: 14,
     featured: true,
     category: 'react',
-    thumb: '/assets/images/folio/scottsutherland/scottsutherland.jpg',
+    thumb: '/assets/images/folio/scottsutherland/scottsutherland-card.webp',
     alt: 'Scott Sutherland Next.js portfolio site screenshot',
     github: 'https://github.com/Spielbergo/portfolio',
     live: null,

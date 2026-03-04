@@ -1,5 +1,4 @@
 import styles from './Hero.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -56,13 +55,13 @@ export default function Hero() {
         </div>
 
         {/* Header image */}
-        <Image
+        <img
           className={styles.headerImg}
-          src="/assets/images/header-img-old.jpg"
+          src="/assets/images/scott-sutherland-hero-large.webp"
+          srcSet="/assets/images/scott-sutherland-hero-mob-sm.webp 320w, /assets/images/scott-sutherland-hero-mob.webp 480w, /assets/images/scott-sutherland-hero-card.webp 640w, /assets/images/scott-sutherland-hero-tablet.webp 768w, /assets/images/scott-sutherland-hero-desktop.webp 1024w, /assets/images/scott-sutherland-hero-mob-lg.webp 1536w, /assets/images/scott-sutherland-hero-large.webp 1920w"
+          sizes="(max-width: 1920px) 100vw, 1920px"
           alt="Mountain scene with coniferous trees in the foreground"
-          width={1920}
-          height={1080}
-          priority
+          fetchPriority="high"
         />
       </header>
     </section>

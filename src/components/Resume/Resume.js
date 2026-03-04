@@ -155,7 +155,7 @@ export default function Resume() {
               <div className={styles.info}>
                 <div className={styles.name}>{t.name}</div>
                 <cite className={styles.jobTitle}>{t.job}</cite>
-                <div className={styles.stars} aria-label="5 stars out of 5">
+                <div className={styles.stars}>
                   {[...Array(5)].map((_, j) => (
                     <i key={j} className="fas fa-star" style={{ color: '#ebd746' }} aria-hidden="true" />
                   ))}
