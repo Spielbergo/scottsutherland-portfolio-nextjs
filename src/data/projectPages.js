@@ -36,6 +36,11 @@ export const projectPages = [
           icon:  'fa fa-external-link-alt',
           href:  '/projects/figma-aquarium-demo/index.html',
         },
+        {
+          label: 'WordPress Demo',
+          icon:  'fa fa-external-link-alt',
+          href:  'https://wp.webcheddar.ca/aquarium-demo/home/',
+        },
       ],
     },
 
