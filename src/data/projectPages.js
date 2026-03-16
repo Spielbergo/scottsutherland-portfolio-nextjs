@@ -162,6 +162,21 @@ export const projectPages = [
         label:  'JavaScript',
         detail: 'Mobile nav, product carousel, form validation, dynamic footer year',
       },
+      {
+        icon:   'fab fa-wordpress',
+        label:  'WordPress',
+        detail: 'Minimal plugins (3), same Lighthouse speeds',
+      },
+      {
+        icon:   'fab fa-figma',
+        label:  'Figma',
+        detail: 'Source design — pixel-perfect layout, colour, and typography recreation',
+      },
+      {
+        icon:   'fab fa-php',
+        label:  'PHP',
+        detail: 'Custom WordPress theme built from the static HTML/CSS/JS source',
+      },
     ],
 
     highlights: [
