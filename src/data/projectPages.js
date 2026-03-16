@@ -46,6 +46,7 @@ export const projectPages = [
 
     overview: [
       'This project is a pixel-perfect recreation of a Figma design for Annerley Aquarium, a Brisbane-based family-owned aquarium specialist. Every section was built to match the Figma comps in layout, typography, colour, and spacing — without using any CSS frameworks or UI libraries.',
+      'The WordPress version of this project was built by converting the HTML/CSS/JS into a custom theme. The static HTML/CSS/JS version (linked above) is the source of truth for the pixel-perfect build — the WordPress version is a demonstration of how the same design can be implemented in a CMS environment while preserving the exact look and feel. Only 3 plugins were used in the WordPress build: Contact Form 7 for the contact form, Yoast SEO, and WP-Optimize for performance optimisations (caching, minification, image optimization).',
       'The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code — exactly the skill set required for Figma-to-website jobs.',
     ],
 
