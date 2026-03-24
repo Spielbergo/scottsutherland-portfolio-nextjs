@@ -179,7 +179,7 @@
 @media screen and (min-width: 1025px) {
   .hamburger { display: none; }
 
-  /* Social icons — fixed top-right, out of the flex flow */
+  /* Social icons - fixed top-right, out of the flex flow */
   .contactIcons {
     position: fixed;
     right: 0;

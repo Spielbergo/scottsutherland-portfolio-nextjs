@@ -1,4 +1,4 @@
-/* ========== ANNERLEY AQUARIUM — style.css ========== */
+/* ========== ANNERLEY AQUARIUM - style.css ========== */
 
 /* ---- CSS Custom Properties ---- */
 :root {
@@ -112,7 +112,7 @@ input, textarea, button, select {
     border-radius: var(--radius-sm);
 }
 
-/* ========== ACCESSIBILITY — SKIP LINK ========== */
+/* ========== ACCESSIBILITY - SKIP LINK ========== */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -143,7 +143,7 @@ input, textarea, button, select {
     border: 0;
 }
 
-/* ========== LAYOUT — CONTAINER ========== */
+/* ========== LAYOUT - CONTAINER ========== */
 .container {
     width: 100%;
     max-width: var(--container-max);
@@ -716,7 +716,7 @@ input, textarea, button, select {
     z-index: 3;
 }
 
-/* About section decorative blobs (right side) — inline SVGs from Figma */
+/* About section decorative blobs (right side) - inline SVGs from Figma */
 .about .container { position: relative; z-index: 1; }
 .about-blobs {
     position: absolute;
@@ -992,7 +992,7 @@ input, textarea, button, select {
     display: none; 
 }
 
-/* Explore button — centred below search */
+/* Explore button - centred below search */
 .fish-explore-btn {
     border-color: var(--border);
     color: var(--brand);
@@ -1035,7 +1035,7 @@ input, textarea, button, select {
     display: block;
 }
 
-/* Expert Advice Banner — card below the image */
+/* Expert Advice Banner - card below the image */
 .expert-advice-banner {
     background: var(--white);
     /* border: 1px solid var(--border); */
@@ -1251,7 +1251,7 @@ input, textarea, button, select {
     position: relative;
 }
 
-/* Decorative SVG for products section — flipped and anchored top-right */
+/* Decorative SVG for products section - flipped and anchored top-right */
 .products-splash {
     position: absolute;
     top: -10%;
@@ -1544,7 +1544,7 @@ input, textarea, button, select {
     overflow: visible;
 }
 
-/* Shared SVG blob base — blur is baked into the SVG feGaussianBlur */
+/* Shared SVG blob base - blur is baked into the SVG feGaussianBlur */
 .reviews-blob {
     position: absolute;
     display: block;
@@ -1579,7 +1579,7 @@ input, textarea, button, select {
         grid-template-rows: auto 1fr;
         align-items: start;
     }
-    /* Header: col 1, row 1 — right col row 1 stays empty (natural whitespace) */
+    /* Header: col 1, row 1 - right col row 1 stays empty (natural whitespace) */
     .reviews-header  { grid-column: 1; grid-row: 1; }
     .reviews-left    { grid-column: 1; grid-row: 2; }
     .reviews-cards   { grid-column: 2; grid-row: 2; }
@@ -1715,7 +1715,7 @@ input, textarea, button, select {
     z-index: 2;
 }
 
-/* Grid overlay — fades out at all four edges via CSS mask */
+/* Grid overlay - fades out at all four edges via CSS mask */
 .contact-grid-overlay {
     position: absolute;
     inset: 0;
@@ -1737,7 +1737,7 @@ input, textarea, button, select {
     mask-composite: intersect;
 }
 
-/* Blobs — Figma SVGs, positioned left side (mirrored from about/reviews) */
+/* Blobs - Figma SVGs, positioned left side (mirrored from about/reviews) */
 .contact-blobs {
     position: absolute;
     top: 0;
@@ -1749,7 +1749,7 @@ input, textarea, button, select {
     overflow: visible;
 }
 
-/* Shared SVG blob base — blur baked into SVG feGaussianBlur */
+/* Shared SVG blob base - blur baked into SVG feGaussianBlur */
 .contact-blob {
     position: absolute;
     display: block;
@@ -2047,7 +2047,7 @@ input, textarea, button, select {
     }
 }
 
-/* ========== REDUCED MOTION — respect user preference ========== */
+/* ========== REDUCED MOTION - respect user preference ========== */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;

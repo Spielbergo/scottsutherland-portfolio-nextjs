@@ -12,7 +12,7 @@ export const projects = [
     slides: [
       {
         img:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-card.webp',
-        caption: 'A production Next.js marketing site for Web Cheddar — component-driven architecture, CSS Modules, WordPress headless CMS, and a serverless Nodemailer contact form.',
+        caption: 'A production Next.js marketing site for Web Cheddar - component-driven architecture, CSS Modules, WordPress headless CMS, and a serverless Nodemailer contact form.',
         num:     '1 / 1',
       },
     ],
@@ -29,7 +29,7 @@ export const projects = [
     slides: [
       {
         img:     '/assets/images/folio/clipifyit/clipifyit-card.webp',
-        caption: 'A Next.js clipboard manager — save URLs for offline reading, share from Android, persistent clipboard lists, compression tools, and optional Supabase, Stripe, and AWS Amplify integrations.',
+        caption: 'A Next.js clipboard manager - save URLs for offline reading, share from Android, persistent clipboard lists, compression tools, and optional Supabase, Stripe, and AWS Amplify integrations.',
         num:     '1 / 1',
       },
     ],
@@ -47,7 +47,7 @@ export const projects = [
       {
         img: '/assets/images/folio/scottsutherland/portfolio-item-01.jpg',
         caption:
-          'A complete rebuild of the vanilla HTML/CSS/JS portfolio as a Next.js 16 App Router application — component-based, CSS Modules, no Tailwind.',
+          'A complete rebuild of the vanilla HTML/CSS/JS portfolio as a Next.js 16 App Router application - component-based, CSS Modules, no Tailwind.',
         num: '1 / 3',
       },
       {
@@ -76,7 +76,7 @@ export const projects = [
     slides: [
       {
         img:     '/assets/images/folio/designer-portfolio-demo/figma-portfolio-demo-hero.webp',
-        caption: 'A pixel-perfect Figma-to-HTML/CSS UI/UX designer portfolio demo. Zero dependencies — accessible, performance-optimised, with full favicon suite and JSON-LD structured data.',
+        caption: 'A pixel-perfect Figma-to-HTML/CSS UI/UX designer portfolio demo. Zero dependencies - accessible, performance-optimised, with full favicon suite and JSON-LD structured data.',
         num:     '1 / 1',
       },
     ],
@@ -94,7 +94,7 @@ export const projects = [
       {
         img: '/assets/images/folio/aquarium-demo/aquarium-hero.webp',
         caption:
-          'A pixel-perfect Figma-to-HTML/CSS build for Annerley Aquarium. Zero dependencies — semantic HTML5, vanilla CSS3, and vanilla JavaScript.',
+          'A pixel-perfect Figma-to-HTML/CSS build for Annerley Aquarium. Zero dependencies - semantic HTML5, vanilla CSS3, and vanilla JavaScript.',
         num: '1 / 1',
       },
     ],
@@ -112,7 +112,7 @@ export const projects = [
       {
         img: '/assets/images/folio/restaurant-demo/figma-restaurant-demo-hero.webp',
         caption:
-          'A pixel-perfect Figma-to-HTML/CSS build for Dine Restaurant — fine Japanese cuisine and sushi bar. Zero dependencies, full SEO, responsive, and accessible.',
+          'A pixel-perfect Figma-to-HTML/CSS build for Dine Restaurant - fine Japanese cuisine and sushi bar. Zero dependencies, full SEO, responsive, and accessible.',
         num: '1 / 1',
       },
     ],

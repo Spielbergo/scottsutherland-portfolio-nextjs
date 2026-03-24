@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home" className={styles.heroSection} aria-label="Introduction">
       <header className={styles.header}>
         {/* Flying Birds Animation */}
-        {/* Credit: Steven Roberts — https://codepen.io/matchboxhero/pen/RLebOY */}
+        {/* Credit: Steven Roberts - https://codepen.io/matchboxhero/pen/RLebOY */}
         <div className={styles.birdsContainer} aria-hidden="true">
           <div className={`${styles.birdContainer} ${styles.birdContainerOne}`}>
             <div className={`${styles.bird} ${styles.birdOne}`} />

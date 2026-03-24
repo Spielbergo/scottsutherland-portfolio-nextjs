@@ -1,6 +1,6 @@
-# Annerley Aquarium — Figma to HTML/CSS Pixel-Perfect Build
+# Annerley Aquarium - Figma to HTML/CSS Pixel-Perfect Build
 
-A fully hand-coded, pixel-perfect conversion of a Figma design into a production-ready static website — built with semantic HTML5, vanilla CSS3, and vanilla JavaScript. No frameworks, no libraries, no shortcuts.
+A fully hand-coded, pixel-perfect conversion of a Figma design into a production-ready static website - built with semantic HTML5, vanilla CSS3, and vanilla JavaScript. No frameworks, no libraries, no shortcuts.
 
 ---
 
@@ -18,9 +18,9 @@ A fully hand-coded, pixel-perfect conversion of a Figma design into a production
 
 ## About the Project
 
-This project is a pixel-perfect recreation of a Figma design for **Annerley Aquarium**, a Brisbane-based family-owned aquarium specialist. Every section was built to match the Figma comps in layout, typography, colour, and spacing — without using any CSS frameworks or UI libraries.
+This project is a pixel-perfect recreation of a Figma design for **Annerley Aquarium**, a Brisbane-based family-owned aquarium specialist. Every section was built to match the Figma comps in layout, typography, colour, and spacing - without using any CSS frameworks or UI libraries.
 
-The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code — exactly the skill set required for Figma-to-website jobs.
+The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code - exactly the skill set required for Figma-to-website jobs.
 
 ---
 
@@ -44,23 +44,23 @@ The goal: demonstrate the ability to take a Figma file and ship clean, accessibl
 
 ## Tech Stack
 
-- **HTML5** — semantic, accessible markup (ARIA roles, skip link, `aria-label`, `role="list"` etc.)
-- **CSS3** — custom properties, CSS Grid, Flexbox, `clamp()`, media queries, gradient text
-- **Vanilla JavaScript** — mobile nav drawer, product carousel, form validation, active nav highlighting, dynamic footer year
-- **Google Fonts** — DM Sans
-- **SVG** — inline rainbow-gradient logo mark, arrow icons
+- **HTML5** - semantic, accessible markup (ARIA roles, skip link, `aria-label`, `role="list"` etc.)
+- **CSS3** - custom properties, CSS Grid, Flexbox, `clamp()`, media queries, gradient text
+- **Vanilla JavaScript** - mobile nav drawer, product carousel, form validation, active nav highlighting, dynamic footer year
+- **Google Fonts** - DM Sans
+- **SVG** - inline rainbow-gradient logo mark, arrow icons
 
 ---
 
 ## Key Implementation Details
 
-- **Zero dependencies** — no Bootstrap, Tailwind, jQuery, or any third-party CSS/JS
+- **Zero dependencies** - no Bootstrap, Tailwind, jQuery, or any third-party CSS/JS
 - **CSS custom properties** for the full design token system (colours, spacing, radii, font sizes, font weights)
-- **Rainbow gradient text** via `-webkit-background-clip: text` — used consistently across headings
+- **Rainbow gradient text** via `-webkit-background-clip: text` - used consistently across headings
 - **CSS Grid** for the Exclusive Offer, Reviews, Contact, and Footer layouts
-- **Responsive** — mobile-first breakpoints at `480px`, `768px`, and `1024px`
-- **Accessible** — keyboard navigable, ARIA attributes, semantic HTML throughout
-- **SEO ready** — `<title>`, meta description, Open Graph, Twitter Card, Schema.org JSON-LD, canonical URL
+- **Responsive** - mobile-first breakpoints at `480px`, `768px`, and `1024px`
+- **Accessible** - keyboard navigable, ARIA attributes, semantic HTML throughout
+- **SEO ready** - `<title>`, meta description, Open Graph, Twitter Card, Schema.org JSON-LD, canonical URL
 
 ---
 
@@ -76,7 +76,7 @@ The goal: demonstrate the ability to take a Figma file and ship clean, accessibl
 
 ## Local Development
 
-No build step required — it's pure static HTML/CSS/JS.
+No build step required - it's pure static HTML/CSS/JS.
 
 ```bash
 # Clone the repo
@@ -110,7 +110,7 @@ aquarium-website/
 
 ## About Me
 
-I'm a front-end developer specialising in pixel-perfect Figma-to-HTML/CSS builds as well as WordPress, React and Next.js. I take Figma designs and translate them into clean, semantic, accessible, production-ready code — fast. I have experience working with agencies, freelancers, and directly with clients to bring their Figma designs to life on the web. My focus is on writing maintainable code that matches the design comps exactly, while also ensuring good performance and accessibility.
+I'm a front-end developer specialising in pixel-perfect Figma-to-HTML/CSS builds as well as WordPress, React and Next.js. I take Figma designs and translate them into clean, semantic, accessible, production-ready code - fast. I have experience working with agencies, freelancers, and directly with clients to bring their Figma designs to life on the web. My focus is on writing maintainable code that matches the design comps exactly, while also ensuring good performance and accessibility.
 ---
 
-_Built with care — every pixel intentional._
+_Built with care - every pixel intentional._

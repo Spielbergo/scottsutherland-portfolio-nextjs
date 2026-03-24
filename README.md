@@ -1,4 +1,4 @@
-# Scott Sutherland — Next.js Portfolio
+# Scott Sutherland - Next.js Portfolio
 
 Personal portfolio and project showcase for Scott Sutherland, a Toronto-based web developer. This repository powers the live site at [scottsutherland.info](https://scottsutherland.info) and demonstrates production-ready Next.js patterns, component-driven architecture, and accessibility-first front-end development.
 
@@ -10,7 +10,7 @@ Repository visibility: Public
 
 ## About this Project
 
-This is a full rebuild of a vanilla HTML/CSS/JS portfolio into a Next.js 16 App Router application. The goal was pixel-perfect parity with the original — same look, same animations, same interactions — while gaining proper routing, reusable React components, scoped CSS Modules, and a server-side API route for the contact form.
+This is a full rebuild of a vanilla HTML/CSS/JS portfolio into a Next.js 16 App Router application. The goal was pixel-perfect parity with the original - same look, same animations, same interactions - while gaining proper routing, reusable React components, scoped CSS Modules, and a server-side API route for the contact form.
 
 The site is intentionally dependency-light: no Tailwind, no UI framework, no component library. Every style is hand-written using CSS Modules and custom properties.
 
@@ -31,12 +31,12 @@ The site is intentionally dependency-light: no Tailwind, no UI framework, no com
 
 ## Tech Stack
 
-- **Next.js 16** — App Router, static generation, API routes, `next/font`, `next/image`
-- **React 19** — Server and Client Components, `useEffect`, `useContext`
-- **JavaScript (ES2024)** — No TypeScript; plain JS modules throughout
-- **CSS Modules** — Scoped per-component styles; `globals.css` for tokens and resets
-- **Nodemailer 8** — SMTP email delivery from the contact API route
-- **AOS** — Scroll-based animation library, dynamically imported to avoid SSR issues
+- **Next.js 16** - App Router, static generation, API routes, `next/font`, `next/image`
+- **React 19** - Server and Client Components, `useEffect`, `useContext`
+- **JavaScript (ES2024)** - No TypeScript; plain JS modules throughout
+- **CSS Modules** - Scoped per-component styles; `globals.css` for tokens and resets
+- **Nodemailer 8** - SMTP email delivery from the contact API route
+- **AOS** - Scroll-based animation library, dynamically imported to avoid SSR issues
 
 The project is bootstrapped with `create-next-app` using `--app --js --no-tailwind --src-dir` flags and built section by section from the original vanilla source.
 
@@ -44,15 +44,15 @@ The project is bootstrapped with `create-next-app` using `--app --js --no-tailwi
 
 ## Notable Implementation Details
 
-- **Component-first structure** under `src/components/` — each section is an isolated React component with a co-located `.module.css` file.
+- **Component-first structure** under `src/components/` - each section is an isolated React component with a co-located `.module.css` file.
 - **CSS custom properties** for all colours, spacing, radii, and font sizes defined on `:root` in `globals.css`.
-- **Birds animation** — multi-layer CSS keyframe flight animation migrated from vanilla CSS to CSS Modules; class name hashing is handled automatically by Next.js.
-- **Logo marquee** — DOM cloning logic for seamless infinite scroll moved into a `useEffect` inside a dedicated `LogoSliderClient.js` component.
-- **AOS** — browser-only; dynamically imported inside a `'use client'` component with `useEffect` to prevent SSR crashes.
-- **Loader** — the `.loaded` class is applied to `<body>` via JS; the selector `.loaded .loader-wrapper` lives in `globals.css` (not a module) so the body-scoped rule resolves correctly.
-- **Contact API** — `POST /api/contact` validates input and sends via Nodemailer; SMTP credentials are kept in `.env.local` and never committed.
-- **Project detail pages** — dynamic routes under `/project-pages/[slug]` with data driven from `src/data/projectPages.js`; adding a new entry automatically creates a new page.
-- **Static where possible** — the home page and all project detail pages are statically prerendered at build time.
+- **Birds animation** - multi-layer CSS keyframe flight animation migrated from vanilla CSS to CSS Modules; class name hashing is handled automatically by Next.js.
+- **Logo marquee** - DOM cloning logic for seamless infinite scroll moved into a `useEffect` inside a dedicated `LogoSliderClient.js` component.
+- **AOS** - browser-only; dynamically imported inside a `'use client'` component with `useEffect` to prevent SSR crashes.
+- **Loader** - the `.loaded` class is applied to `<body>` via JS; the selector `.loaded .loader-wrapper` lives in `globals.css` (not a module) so the body-scoped rule resolves correctly.
+- **Contact API** - `POST /api/contact` validates input and sends via Nodemailer; SMTP credentials are kept in `.env.local` and never committed.
+- **Project detail pages** - dynamic routes under `/project-pages/[slug]` with data driven from `src/data/projectPages.js`; adding a new entry automatically creates a new page.
+- **Static where possible** - the home page and all project detail pages are statically prerendered at build time.
 
 ---
 
@@ -73,7 +73,7 @@ scottsutherland-portfolio-nextjs/
 │   │   ├── project-pages/
 │   │   │   └── [slug]/
 │   │   │       └── page.js     # Dynamic project detail pages
-│   │   ├── layout.js           # Root layout — fonts, GTM, AOS, global clients
+│   │   ├── layout.js           # Root layout - fonts, GTM, AOS, global clients
 │   │   └── page.js             # Home page
 │   ├── components/
 │   │   ├── home/               # Section components (Hero, About, Resume, Portfolio…)
@@ -137,7 +137,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Deployment
 
-The easiest deployment target is [Vercel](https://vercel.com) — zero config for Next.js App Router projects. Set your environment variables in the Vercel dashboard under **Settings → Environment Variables** before deploying.
+The easiest deployment target is [Vercel](https://vercel.com) - zero config for Next.js App Router projects. Set your environment variables in the Vercel dashboard under **Settings → Environment Variables** before deploying.
 
 ```bash
 npm run build   # Production build
@@ -162,7 +162,7 @@ The original site was a single-page vanilla HTML/CSS/JS application with a PHP/P
 
 ## About / Contact
 
-Built and maintained by **Scott Sutherland** — Toronto-based web developer specialising in Next.js, React, WordPress, and accessible front-end builds.
+Built and maintained by **Scott Sutherland** - Toronto-based web developer specialising in Next.js, React, WordPress, and accessible front-end builds.
 
 - Portfolio: [scottsutherland.info](https://scottsutherland.info)
 - Web Studio: [webcheddar.ca](https://webcheddar.ca)

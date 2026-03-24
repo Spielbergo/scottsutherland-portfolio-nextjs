@@ -1,4 +1,4 @@
-/* ========== GLOBAL STYLES — Scott Sutherland Portfolio ========== */
+/* ========== GLOBAL STYLES - Scott Sutherland Portfolio ========== */
 /* -- CSS CUSTOM PROPERTIES -- */
 :root {
     --text-color: #fff;
@@ -451,7 +451,7 @@ footer p { margin-bottom: 0; }
     border: 0;
 }
 
-/* Skip-to-main-content link — visible only on focus */
+/* Skip-to-main-content link - visible only on focus */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -472,7 +472,7 @@ footer p { margin-bottom: 0; }
     outline-offset: 2px;
 }
 
-/* Keyboard focus ring — visible on all interactive elements */
+/* Keyboard focus ring - visible on all interactive elements */
 :focus-visible {
     outline: 3px solid var(--hover-color);
     outline-offset: 3px;
@@ -483,7 +483,7 @@ footer p { margin-bottom: 0; }
     outline: none;
 }
 
-/* Respect reduced-motion preference — tones down all animations */
+/* Respect reduced-motion preference - tones down all animations */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

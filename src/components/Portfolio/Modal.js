@@ -24,7 +24,7 @@ export default function Modal({ project, onClose }) {
     return () => window.removeEventListener('keydown', handler);
   }, [onClose]);
 
-  // Focus trap — keep Tab / Shift+Tab inside the dialog
+  // Focus trap - keep Tab / Shift+Tab inside the dialog
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!dialog) return;

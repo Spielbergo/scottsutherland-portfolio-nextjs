@@ -9,7 +9,7 @@ export async function POST(request) {
       return Response.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    // Create transporter — configure via .env.local (see .env.local.example)
+    // Create transporter - configure via .env.local (see .env.local.example)
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,

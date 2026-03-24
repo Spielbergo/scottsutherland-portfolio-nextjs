@@ -1,5 +1,5 @@
 /**
- * Annerley Aquarium — main.js
+ * Annerley Aquarium - main.js
  * Mobile nav, sticky header, scroll reveal, form validation, product carousel
  */
 
@@ -111,7 +111,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ====================================================
-   STICKY HEADER — add .scrolled class on scroll
+   STICKY HEADER - add .scrolled class on scroll
    ==================================================== */
 (function initStickyHeader() {
   const header = qs('.site-header');
@@ -126,7 +126,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ====================================================
-   ACTIVE NAV LINK — highlight based on scroll position
+   ACTIVE NAV LINK - highlight based on scroll position
    ==================================================== */
 (function initActiveNav() {
   const sections = qsa('section[id]');
@@ -299,7 +299,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ====================================================
-   PRODUCTS SLIDER — keyboard/button prev/next
+   PRODUCTS SLIDER - keyboard/button prev/next
    ==================================================== */
 (function initProductsNav() {
   const grid    = qs('#products-grid');
@@ -328,7 +328,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ====================================================
-   SMOOTH SCROLL — for anchor links
+   SMOOTH SCROLL - for anchor links
    ==================================================== */
 (function initSmoothScroll() {
   // Cache nav height to avoid repeated layout queries (reduces forced reflow)
@@ -360,7 +360,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
     window.scrollTo({ top, behavior: 'smooth' });
 
-    // Update focus for accessibility — defer focus to next frame to avoid layout thrash
+    // Update focus for accessibility - defer focus to next frame to avoid layout thrash
     target.setAttribute('tabindex', '-1');
     requestAnimationFrame(() => {
       target.focus({ preventScroll: true });
@@ -378,7 +378,7 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ====================================================
-   LAZY IMAGE LOADING — native + polyfill fallback
+   LAZY IMAGE LOADING - native + polyfill fallback
    ==================================================== */
 (function initLazyImages() {
   if ('loading' in HTMLImageElement.prototype) return; // native support

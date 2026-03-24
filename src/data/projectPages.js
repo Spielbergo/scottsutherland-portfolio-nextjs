@@ -7,8 +7,8 @@
  *
  * screenshots[] entry shape:
  *   { src, alt, caption, eager?, fullSrc? }
- *   src     — card thumbnail (shown in the grid)
- *   fullSrc — full-resolution image shown in the lightbox (optional; falls back to src if omitted)
+ *   src     - card thumbnail (shown in the grid)
+ *   fullSrc - full-resolution image shown in the lightbox (optional; falls back to src if omitted)
  */
 export const projectPages = [
 
@@ -17,8 +17,8 @@ export const projectPages = [
     slug: 'aquarium-demo',
 
     meta: {
-      title: 'Annerley Aquarium — Project Detail',
-      description: 'A pixel-perfect Figma-to-HTML/CSS build for Annerley Aquarium. Semantic HTML5, vanilla CSS3, vanilla JavaScript — zero dependencies.',
+      title: 'Annerley Aquarium - Project Detail',
+      description: 'A pixel-perfect Figma-to-HTML/CSS build for Annerley Aquarium. Semantic HTML5, vanilla CSS3, vanilla JavaScript - zero dependencies.',
     },
 
     hero: {
@@ -45,42 +45,42 @@ export const projectPages = [
     },
 
     overview: [
-      'This project is a pixel-perfect recreation of a Figma design for Annerley Aquarium, a Brisbane-based family-owned aquarium specialist. Every section was built to match the Figma comps in layout, typography, colour, and spacing — without using any CSS frameworks or UI libraries.',
-      'The WordPress version of this project was built by converting the HTML/CSS/JS into a custom theme. The static HTML/CSS/JS version (linked above) is the source of truth for the pixel-perfect build — the WordPress version is a demonstration of how the same design can be implemented in a CMS environment while preserving the exact look and feel. Only 3 plugins were used in the WordPress build: Contact Form 7 for the contact form, Yoast SEO, and WP-Optimize for performance optimisations (caching, minification, image optimization). Lighthouse scores for the WordPress version are 99 Performance, 100 Accessibility, 100 Best Practices, and 100 SEO — demonstrating that a CMS build can be just as performant and accessible as a static hand-coded site with the right optimisations.',
-      'The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code — exactly the skill set required for Figma-to-website jobs.',
+      'This project is a pixel-perfect recreation of a Figma design for Annerley Aquarium, a Brisbane-based family-owned aquarium specialist. Every section was built to match the Figma comps in layout, typography, colour, and spacing - without using any CSS frameworks or UI libraries.',
+      'The WordPress version of this project was built by converting the HTML/CSS/JS into a custom theme. The static HTML/CSS/JS version (linked above) is the source of truth for the pixel-perfect build - the WordPress version is a demonstration of how the same design can be implemented in a CMS environment while preserving the exact look and feel. Only 3 plugins were used in the WordPress build: Contact Form 7 for the contact form, Yoast SEO, and WP-Optimize for performance optimisations (caching, minification, image optimization). Lighthouse scores for the WordPress version are 99 Performance, 100 Accessibility, 100 Best Practices, and 100 SEO - demonstrating that a CMS build can be just as performant and accessible as a static hand-coded site with the right optimisations.',
+      'The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code - exactly the skill set required for Figma-to-website jobs.',
     ],
 
     screenshots: [
       {
         src:     '/assets/images/folio/aquarium-demo/aquarium-hero.webp',
         alt:     'Annerley Aquarium hero section',
-        caption: 'Hero — Full-bleed image with headline and dual CTA buttons',
+        caption: 'Hero - Full-bleed image with headline and dual CTA buttons',
         eager:   true,
       },
       {
         src:     '/assets/images/folio/aquarium-demo/aquarium-nav.webp',
         alt:     'Navigation section',
-        caption: 'Navigation — Sticky header with hamburger mobile drawer',
+        caption: 'Navigation - Sticky header with hamburger mobile drawer',
       },
       {
         src:     '/assets/images/folio/aquarium-demo/aquarium-fish-collection.webp',
         alt:     'Fish collection section',
-        caption: 'Fish Collection — Search bar, feature image, and 4-card grid',
+        caption: 'Fish Collection - Search bar, feature image, and 4-card grid',
       },
       {
         src:     '/assets/images/folio/aquarium-demo/aquarium-products.webp',
         alt:     'Products section',
-        caption: 'Products — Transparent cards with carousel navigation arrows',
+        caption: 'Products - Transparent cards with carousel navigation arrows',
       },
       {
         src:     '/assets/images/folio/aquarium-demo/aquarium-reviews.webp',
         alt:     'Reviews section',
-        caption: 'Reviews — Lavender blob accents with rainbow gradient heading',
+        caption: 'Reviews - Lavender blob accents with rainbow gradient heading',
       },
       {
         src:     '/assets/images/folio/aquarium-demo/aquarium-contact-footer.webp',
         alt:     'Contact and footer sections',
-        caption: 'Contact — 4-field form with validation and pink pill buttons',
+        caption: 'Contact - 4-field form with validation and pink pill buttons',
       },
     ],
 
@@ -170,7 +170,7 @@ export const projectPages = [
       {
         icon:   'fab fa-figma',
         label:  'Figma',
-        detail: 'Source design — pixel-perfect layout, colour, and typography recreation',
+        detail: 'Source design - pixel-perfect layout, colour, and typography recreation',
       },
       {
         icon:   'fab fa-php',
@@ -232,12 +232,12 @@ export const projectPages = [
     lighthouseImage: {
       src:     '/assets/images/folio/aquarium-demo/aquarium-lighthouse.webp',
       alt:     'Lighthouse scores screenshot',
-      caption: 'Lighthouse — 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
+      caption: 'Lighthouse - 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
     },
 
     codeBlock: {
       heading: 'Local Development',
-      intro:   'No build step required — pure static HTML/CSS/JS.',
+      intro:   'No build step required - pure static HTML/CSS/JS.',
       code: `# Clone the repo
 git clone https://github.com/Spielbergo/figma-aquarium-demo.git
 cd figma-aquarium-demo
@@ -254,14 +254,14 @@ python -m http.server 5500`,
     slug: 'nextjs-portfolio',
 
     meta: {
-      title:       'Next.js Portfolio Rebuild — Project Detail',
-      description: 'A full rebuild of a vanilla HTML/CSS/JS portfolio site into a Next.js 16 App Router application — React components, CSS Modules, no Tailwind, Nodemailer contact form.',
+      title:       'Next.js Portfolio Rebuild - Project Detail',
+      description: 'A full rebuild of a vanilla HTML/CSS/JS portfolio site into a Next.js 16 App Router application - React components, CSS Modules, no Tailwind, Nodemailer contact form.',
     },
 
     hero: {
       bg:       'https://placehold.co/1920x800/0a0a0a/ffffff?text=Next.js+Portfolio+Rebuild',
       title:    'Next.js Portfolio Rebuild',
-      subtitle: 'A full rebuild of this very site — from vanilla HTML/CSS/JS to a Next.js 16 App Router application with React components, CSS Modules, and a Nodemailer contact API.',
+      subtitle: 'A full rebuild of this very site - from vanilla HTML/CSS/JS to a Next.js 16 App Router application with React components, CSS Modules, and a Nodemailer contact API.',
       badges:   ['Next.js 16', 'React 19', 'CSS Modules', 'Nodemailer', 'App Router', 'No Tailwind'],
       actions:  [
         {
@@ -273,41 +273,41 @@ python -m http.server 5500`,
     },
 
     overview: [
-      'The original portfolio site was a single-page vanilla HTML/CSS/JS application with a PHP/PHPMailer contact backend. While it worked well, maintaining and extending it meant editing monolithic HTML and CSS files. This rebuild migrates every section into isolated React components — preserving the exact look and feel — while gaining proper routing, reusable data structures, and a server-side API for the contact form.',
-      'The project was bootstrapped with create-next-app@latest using the --app --js --no-tailwind --src-dir flags and then hand-built section by section, component by component. Every visual detail from the original — the birds animation, the logo marquee, the timeline, the portfolio modal slider — was recreated using the same underlying CSS concepts, just scoped inside CSS Modules.',
+      'The original portfolio site was a single-page vanilla HTML/CSS/JS application with a PHP/PHPMailer contact backend. While it worked well, maintaining and extending it meant editing monolithic HTML and CSS files. This rebuild migrates every section into isolated React components - preserving the exact look and feel - while gaining proper routing, reusable data structures, and a server-side API for the contact form.',
+      'The project was bootstrapped with create-next-app@latest using the --app --js --no-tailwind --src-dir flags and then hand-built section by section, component by component. Every visual detail from the original - the birds animation, the logo marquee, the timeline, the portfolio modal slider - was recreated using the same underlying CSS concepts, just scoped inside CSS Modules.',
     ],
 
     screenshots: [
       // {
       //   src:     'https://placehold.co/900x500/0a0a0a/ffffff?text=Home+Page',
       //   alt:     'Home page screenshot',
-      //   caption: 'Home — full-page layout with all original sections preserved',
+      //   caption: 'Home - full-page layout with all original sections preserved',
       //   eager:   true,
       // },
       // {
       //   src:     'https://placehold.co/900x500/1a1a2e/ffffff?text=Hero+%26+Birds+Animation',
       //   alt:     'Hero section screenshot',
-      //   caption: 'Hero — birds CSS animation ported intact from vanilla CSS',
+      //   caption: 'Hero - birds CSS animation ported intact from vanilla CSS',
       // },
       // {
       //   src:     'https://placehold.co/900x500/16213e/ffffff?text=Portfolio+Section+%26+Modal',
       //   alt:     'Portfolio section screenshot',
-      //   caption: 'Portfolio — client-side filter and image/video modal slider',
+      //   caption: 'Portfolio - client-side filter and image/video modal slider',
       // },
       // {
       //   src:     'https://placehold.co/900x500/0f3460/ffffff?text=Resume+Timeline',
       //   alt:     'Resume section screenshot',
-      //   caption: 'Resume — animated timeline, skill bars, and testimonials',
+      //   caption: 'Resume - animated timeline, skill bars, and testimonials',
       // },
       // {
       //   src:     'https://placehold.co/900x500/1a2a1a/ffffff?text=Contact+Form',
       //   alt:     'Contact form screenshot',
-      //   caption: 'Contact — controlled form posting to Next.js Nodemailer API route',
+      //   caption: 'Contact - controlled form posting to Next.js Nodemailer API route',
       // },
       // {
       //   src:     'https://placehold.co/900x500/2a1a0a/ffffff?text=Aquarium+Project+Page',
       //   alt:     'Aquarium project detail page screenshot',
-      //   caption: 'Project Pages — each project gets a dedicated detail route',
+      //   caption: 'Project Pages - each project gets a dedicated detail route',
       // },
     ],
 
@@ -318,12 +318,12 @@ python -m http.server 5500`,
         {
           number: 1,
           name:   'Layout & Root',
-          notes:  'App Router layout.js — fonts, GTM, Font Awesome, AOS, global client components',
+          notes:  'App Router layout.js - fonts, GTM, Font Awesome, AOS, global client components',
         },
         {
           number: 2,
           name:   'Loader',
-          notes:  'Animated page loader — adds body.loaded via useEffect on window load',
+          notes:  'Animated page loader - adds body.loaded via useEffect on window load',
         },
         {
           number: 3,
@@ -363,12 +363,12 @@ python -m http.server 5500`,
         {
           number: 10,
           name:   'Project Pages',
-          notes:  'Dynamic detail pages under /project-pages/ — each project gets its own route',
+          notes:  'Dynamic detail pages under /project-pages/ - each project gets its own route',
         },
         {
           number: 11,
           name:   'API Route',
-          notes:  'POST /api/contact — validates, sends SMTP email via Nodemailer 8',
+          notes:  'POST /api/contact - validates, sends SMTP email via Nodemailer 8',
         },
       ],
     },
@@ -387,7 +387,7 @@ python -m http.server 5500`,
       {
         icon:   'fab fa-js',
         label:  'JavaScript',
-        detail: 'No TypeScript — plain ES2024 modules throughout',
+        detail: 'No TypeScript - plain ES2024 modules throughout',
       },
       {
         icon:   'fas fa-file-code',
@@ -397,7 +397,7 @@ python -m http.server 5500`,
       {
         icon:   'fas fa-envelope',
         label:  'Nodemailer 8',
-        detail: 'SMTP email delivery from the API route — zero third-party SaaS required',
+        detail: 'SMTP email delivery from the API route - zero third-party SaaS required',
       },
     ],
 
@@ -405,7 +405,7 @@ python -m http.server 5500`,
       {
         icon:   'fa fa-ban',
         label:  'Zero Tailwind',
-        detail: 'CSS Modules and custom properties only — same look, zero utility bloat',
+        detail: 'CSS Modules and custom properties only - same look, zero utility bloat',
       },
       {
         icon:   'fa fa-puzzle-piece',
@@ -425,12 +425,12 @@ python -m http.server 5500`,
       {
         icon:   'fa fa-route',
         label:  'App Router',
-        detail: 'File-based routing — project detail pages auto-route under /project-pages/',
+        detail: 'File-based routing - project detail pages auto-route under /project-pages/',
       },
       {
         icon:   'fa fa-lock',
         label:  'ENV-Based Config',
-        detail: 'SMTP credentials kept in .env.local — never committed, .env.local.example provided',
+        detail: 'SMTP credentials kept in .env.local - never committed, .env.local.example provided',
       },
       {
         icon:   'fa fa-mobile-alt',
@@ -447,7 +447,7 @@ python -m http.server 5500`,
     notesSection: {
       heading:    'Migration Approach',
       paragraphs: [
-        'The goal was pixel-perfect parity — the Next.js version should look identical to the original in a browser side-by-side. The migration was done section by section:',
+        'The goal was pixel-perfect parity - the Next.js version should look identical to the original in a browser side-by-side. The migration was done section by section:',
       ],
       orderedList: [
         'Read all original HTML, CSS, and JS in full to understand every dependency.',
@@ -456,11 +456,11 @@ python -m http.server 5500`,
         'Move component-scoped styles into co-located .module.css files.',
         "Replace vanilla DOM scripts (script.js) with useEffect hooks inside 'use client' components.",
         'Replace PHPMailer with a Next.js API Route backed by Nodemailer.',
-        'Add /project-pages/ routing — first entry: Annerley Aquarium detail page.',
+        'Add /project-pages/ routing - first entry: Annerley Aquarium detail page.',
       ],
       subHeading: 'Tricky Parts',
       bulletList: [
-        'Birds animation: CSS keyframe names must be module-scoped — Next.js CSS Modules auto-hash class names, so the animation-name reference inside the same module resolves correctly.',
+        'Birds animation: CSS keyframe names must be module-scoped - Next.js CSS Modules auto-hash class names, so the animation-name reference inside the same module resolves correctly.',
         'Logo marquee: The DOM cloning logic (duplicating list items for seamless looping) was moved into a useEffect inside a dedicated LogoSliderClient.js component.',
         'AOS: AOS is browser-only; it must be dynamically imported inside a "use client" component with useEffect to avoid SSR crashes.',
         'Loader: The .loaded class is applied to <body> via JS, and the CSS selector .loaded .loader-wrapper lives in globals.css (not a module) so the body-scoped selector works correctly.',
@@ -488,14 +488,14 @@ npm run dev   # → http://localhost:3000`,
     slug: 'dine-restaurant',
 
     meta: {
-      title:       'Dine Restaurant — Project Detail',
-      description: 'A pixel-perfect Figma-to-HTML/CSS build for Dine Restaurant. Semantic HTML5, vanilla CSS3, vanilla JavaScript — zero dependencies, full SEO and accessibility.',
+      title:       'Dine Restaurant - Project Detail',
+      description: 'A pixel-perfect Figma-to-HTML/CSS build for Dine Restaurant. Semantic HTML5, vanilla CSS3, vanilla JavaScript - zero dependencies, full SEO and accessibility.',
     },
 
     hero: {
       bg:       'https://placehold.co/1920x800/1a0a00/f5be32?text=Dine+Restaurant',
       title:    'Dine Restaurant',
-      subtitle: 'Figma to HTML/CSS Pixel-Perfect Build — Fine Japanese Cuisine & Sushi Bar',
+      subtitle: 'Figma to HTML/CSS Pixel-Perfect Build - Fine Japanese Cuisine & Sushi Bar',
       badges:   ['HTML5', 'CSS3', 'Vanilla JS', 'Zero Dependencies', 'Figma-to-Code', 'Google Fonts'],
       actions:  [
         {
@@ -512,41 +512,41 @@ npm run dev   # → http://localhost:3000`,
     },
 
     overview: [
-      'This project is a pixel-perfect recreation of a Figma design for Dine Restaurant, a fine Japanese cuisine and sushi bar experience. Every section was built to match the Figma comps in layout, typography, colour, and spacing — without using any CSS frameworks or UI libraries.',
-      'The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code — exactly the skill set required for Figma-to-website jobs. The design features a rich dark palette with a gold accent colour system, layered CSS Grid layouts, and a fully interactive menu filter.',
+      'This project is a pixel-perfect recreation of a Figma design for Dine Restaurant, a fine Japanese cuisine and sushi bar experience. Every section was built to match the Figma comps in layout, typography, colour, and spacing - without using any CSS frameworks or UI libraries.',
+      'The goal: demonstrate the ability to take a Figma file and ship clean, accessible, production-quality front-end code - exactly the skill set required for Figma-to-website jobs. The design features a rich dark palette with a gold accent colour system, layered CSS Grid layouts, and a fully interactive menu filter.',
     ],
 
     screenshots: [
       {
         src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-hero-large-card.webp',
         alt:     'Dine Restaurant hero section',
-        caption: 'Hero — Full-bleed dark background with headline and single CTA button',
+        caption: 'Hero - Full-bleed dark background with headline and single CTA button',
         eager:   true,
       },
       {
         src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-specials-large-card.webp',
         alt:     "Today's Special section",
-        caption: "Today's Special — 3-card grid with star ratings and order buttons",
+        caption: "Today's Special - 3-card grid with star ratings and order buttons",
       },
       {
         src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-specialties-large-card.webp', 
         alt:     'Our Specialties section',
-        caption: 'Our Specialties — 7 filter buttons, alternating image + content layout',
+        caption: 'Our Specialties - 7 filter buttons, alternating image + content layout',
       },
       {
         src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-dining-large-card.webp',
         alt:     'Dining Events section',
-        caption: 'Events — Private/Corporate toggle with 3 tiered packages',
+        caption: 'Events - Private/Corporate toggle with 3 tiered packages',
       },
       {
         src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-story-large-card.webp',
         alt:     'Our Story section',
-        caption: 'Our Story — Two-column layout with stacked chef images and brand text',
+        caption: 'Our Story - Two-column layout with stacked chef images and brand text',
       },
       {
         src:     '/assets/images/folio/restaurant-demo/figma-restaurant-demo-footer-large-card.webp',
         alt:     'Footer and contact section',
-        caption: 'Footer — Full-bleed CTA, address, SVG icons, reservation button, social links',
+        caption: 'Footer - Full-bleed CTA, address, SVG icons, reservation button, social links',
       },
     ],
 
@@ -587,7 +587,7 @@ npm run dev   # → http://localhost:3000`,
         {
           number: 7,
           name:   'Our Story',
-          notes:  'Two-column layout — three stacked chef images + brand story text',
+          notes:  'Two-column layout - three stacked chef images + brand story text',
         },
         {
           number: 8,
@@ -675,7 +675,7 @@ npm run dev   # → http://localhost:3000`,
 
     codeBlock: {
       heading: 'Local Development',
-      intro:   'No build step required — pure static HTML/CSS/JS.',
+      intro:   'No build step required - pure static HTML/CSS/JS.',
       code: `# Clone the repo
 git clone https://github.com/Spielbergo/figma-restaurant-wp.git
 cd figma-restaurant-wp
@@ -687,19 +687,19 @@ python -m http.server 5500`,
   },
 
 
-  /* ========== DEZIGN — DESIGNER PORTFOLIO DEMO ========== */
+  /* ========== DEZIGN - DESIGNER PORTFOLIO DEMO ========== */
   {
     slug: 'dezign-portfolio',
 
     meta: {
-      title:       'Dezign — Designer Portfolio Demo — Project Detail',
-      description: 'A pixel-perfect Figma-to-HTML/CSS designer portfolio demo. Semantic HTML5, vanilla CSS3, vanilla JavaScript — zero dependencies, full accessibility and performance optimisations.',
+      title:       'Dezign - Designer Portfolio Demo - Project Detail',
+      description: 'A pixel-perfect Figma-to-HTML/CSS designer portfolio demo. Semantic HTML5, vanilla CSS3, vanilla JavaScript - zero dependencies, full accessibility and performance optimisations.',
     },
 
     hero: {
       bg:       '',
-      title:    'Dezign — Designer Portfolio',
-      subtitle: 'A hand-coded, accessible, and performance-minded static portfolio site built from a Figma concept — showcasing UI/UX and interaction design work.',
+      title:    'Dezign - Designer Portfolio',
+      subtitle: 'A hand-coded, accessible, and performance-minded static portfolio site built from a Figma concept - showcasing UI/UX and interaction design work.',
       badges:   ['HTML5', 'CSS3', 'Vanilla JS', 'Zero Dependencies', 'Figma-to-Code', 'Google Fonts'],
       actions:  [
         {
@@ -715,7 +715,7 @@ python -m http.server 5500`,
     },
 
     overview: [
-      'This project is a pixel-accurate layout and typography recreation of a UI/UX designer portfolio Figma concept. Every section was hand-coded to match the design in layout, colour, and spacing — without using any CSS frameworks or UI libraries.',
+      'This project is a pixel-accurate layout and typography recreation of a UI/UX designer portfolio Figma concept. Every section was hand-coded to match the design in layout, colour, and spacing - without using any CSS frameworks or UI libraries.',
       'The build demonstrates pixel-perfect Figma-to-HTML/CSS delivery with a strong focus on accessibility (skip link, ARIA attributes, focus-visible styles) and performance (non-blocking font and stylesheet loading, lazy-loaded images). JSON-LD structured data and a full favicon suite are included.',
     ],
 
@@ -724,26 +724,26 @@ python -m http.server 5500`,
         src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-hero-card.webp',
         fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-hero-large.webp',
         alt:     'Dezign hero section',
-        caption: 'Hero — Dark background with headline and scroll indicator',
+        caption: 'Hero - Dark background with headline and scroll indicator',
         eager:   true,
       },
       {
         src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-clients-grid-card.webp',
         fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-clients-grid-large.webp', 
         alt:     'Clients grid section',
-        caption: 'Clients — Airbnb, Google, Microsoft, FedEx placeholder logos in a grid',
+        caption: 'Clients - Airbnb, Google, Microsoft, FedEx placeholder logos in a grid',
       },
       {
         src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-selected-works-card.webp',
         fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-selected-works-large.webp',
         alt:     'Works grid section',
-        caption: 'Works — Project cards with images, categories, and CTAs',
+        caption: 'Works - Project cards with images, categories, and CTAs',
       },
       {
         src:     '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-about-card.webp',
         fullSrc: '/assets/images/folio/designer-portfolio-demo/figma-designer-portfolio-about-large.webp',
         alt:     'About section',
-        caption: 'About — Short bio and image grid layout',
+        caption: 'About - Short bio and image grid layout',
       },
     ],
 
@@ -757,7 +757,7 @@ python -m http.server 5500`,
     lighthouseImage: {
       src:     '/assets/images/folio/designer-portfolio-demo/designer-portfolio-lighthouse.webp',
       alt:     'Lighthouse scores screenshot',
-      caption: 'Lighthouse — 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
+      caption: 'Lighthouse - 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
     },
 
     sectionsTable: {
@@ -821,7 +821,7 @@ python -m http.server 5500`,
       {
         icon:   'fab fa-google',
         label:  'Google Fonts',
-        detail: 'Inter and Work Sans — loaded non-blocking to avoid render-blocking',
+        detail: 'Inter and Work Sans - loaded non-blocking to avoid render-blocking',
       },
       {
         icon:   'fas fa-code',
@@ -875,7 +875,7 @@ python -m http.server 5500`,
 
     codeBlock: {
       heading: 'Local Development',
-      intro:   'No build step required — pure static HTML/CSS/JS.',
+      intro:   'No build step required - pure static HTML/CSS/JS.',
       code: `# Clone the repo
 git clone https://github.com/Spielbergo/figma-portfolio-wp.git
 cd figma-portfolio-wp
@@ -887,19 +887,19 @@ python -m http.server 5500`,
   },
 
 
-  /* ========== WEB CHEDDAR — NEXT.JS ========== */
+  /* ========== WEB CHEDDAR - NEXT.JS ========== */
   {
     slug: 'webcheddar-nextjs',
 
     meta: {
-      title:       'Web Cheddar — Next.js Agency Site',
-      description: 'Production Next.js marketing site for Web Cheddar — component-driven architecture, CSS Modules, dynamic blog and service routes, Clients & Testimonials, Devtools, and a serverless Nodemailer contact form.',
+      title:       'Web Cheddar - Next.js Agency Site',
+      description: 'Production Next.js marketing site for Web Cheddar - component-driven architecture, CSS Modules, dynamic blog and service routes, Clients & Testimonials, Devtools, and a serverless Nodemailer contact form.',
     },
 
     hero: {
       bg:       '/assets/images/folio/webcheddar-nextjs/web-chedddar-hero-bg.webp',
       title:    'Web Cheddar',
-      subtitle: 'Production Next.js marketing site for a small web studio — modular components, CSS Modules, dynamic routing, and a serverless contact API.',
+      subtitle: 'Production Next.js marketing site for a small web studio - modular components, CSS Modules, dynamic routing, and a serverless contact API.',
       badges:   ['Next.js', 'React', 'CSS Modules', 'Nodemailer', 'Dynamic Routes', 'App Router'],
       actions:  [
         {
@@ -911,7 +911,7 @@ python -m http.server 5500`,
     },
 
     overview: [
-      'Web Cheddar is the official site for my freelance web studio. Built with Next.js and React, the site showcases services, a blog, client projects, and testimonials — all driven by a clean component-first architecture with CSS Modules for scoped, maintainable styling.',
+      'Web Cheddar is the official site for my freelance web studio. Built with Next.js and React, the site showcases services, a blog, client projects, and testimonials - all driven by a clean component-first architecture with CSS Modules for scoped, maintainable styling.',
       'The blog is powered by WordPress used as a headless CMS. Next.js fetches posts from the WordPress REST API at build time, delivering the editorial flexibility of WordPress with the performance and developer experience of a React front-end.',
       'The goal was a lightweight, SEO-friendly, and highly accessible production site that could also serve as a reusable template for future client projects. Pages are server-rendered, images are optimised, and the contact form routes through a serverless Nodemailer API endpoint.',
     ],
@@ -921,49 +921,49 @@ python -m http.server 5500`,
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-card.webp',
         fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-hero-large.webp',
         alt:     'Web Cheddar hero section',
-        caption: 'Hero — Full-bleed section with CTAs and optimised imagery',
+        caption: 'Hero - Full-bleed section with CTAs and optimised imagery',
         eager:   true,
       },
       // {
       //   src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-nav.webp',
       //   alt:     'Web Cheddar navigation',
-      //   caption: 'Navigation — Sticky header with responsive mobile nav and accessible focus states',
+      //   caption: 'Navigation - Sticky header with responsive mobile nav and accessible focus states',
       // },
       {
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-item-card.webp',
         fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-item-large.webp',
         alt:     'Web Cheddar services section',
-        caption: 'Services — Service index with dynamic detail pages at /services/[slug]',
+        caption: 'Services - Service index with dynamic detail pages at /services/[slug]',
       },
       {
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-blog-card.webp',
         fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-blog-large.webp',
         alt:     'Web Cheddar blog section',
-        caption: 'Blog — Article listing and dynamic post pages at /blog/[slug]',
+        caption: 'Blog - Article listing and dynamic post pages at /blog/[slug]',
       },
       {
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-testimonials-card.webp',
         fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-testimonials-large.webp',
         alt:     'Web Cheddar clients and testimonials section',
-        caption: 'Clients & Testimonials — Client logo grid and testimonial carousel',
+        caption: 'Clients & Testimonials - Client logo grid and testimonial carousel',
       },
       // {
       //   src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-devtools-card.webp',
       //   fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-devtools-large.webp',
       //   alt:     'Web Cheddar devtools section',
-      //   caption: 'Devtools — Colour palette & gradient generator utilities',
+      //   caption: 'Devtools - Colour palette & gradient generator utilities',
       // },
       {
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-contact-card.webp',
         fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-contact-large.webp',
         alt:     'Web Cheddar contact form',
-        caption: 'Contact — 4-field form with serverless Nodemailer API route',
+        caption: 'Contact - 4-field form with serverless Nodemailer API route',
       },
       {
         src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-page-card.webp',
         fullSrc: '/assets/images/folio/webcheddar-nextjs/web-cheddar-services-page-large.webp',
         alt:     'Web Cheddar Services Overview page',
-        caption: 'Services Overview — Overview of available services',
+        caption: 'Services Overview - Overview of available services',
       },
     ],
 
@@ -977,7 +977,7 @@ python -m http.server 5500`,
     // lighthouseImage: {
     //   src:     '/assets/images/folio/webcheddar-nextjs/web-cheddar-lighthouse.webp',
     //   alt:     'Lighthouse scores screenshot',
-    //   caption: 'Lighthouse — 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
+    //   caption: 'Lighthouse - 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO',
     // },
 
     sectionsTable: {
@@ -1002,7 +1002,7 @@ python -m http.server 5500`,
         {
           number: 4,
           name:   'Blog',
-          notes:  'WordPress headless CMS — posts fetched via the REST API, rendered as dynamic Next.js pages at /blog/[slug]',
+          notes:  'WordPress headless CMS - posts fetched via the REST API, rendered as dynamic Next.js pages at /blog/[slug]',
         },
         {
           number: 5,
@@ -1012,7 +1012,7 @@ python -m http.server 5500`,
         {
           number: 6,
           name:   'Devtools',
-          notes:  'Small developer utilities — colour palette & gradient generator',
+          notes:  'Small developer utilities - colour palette & gradient generator',
         },
         {
           number: 7,
@@ -1036,7 +1036,7 @@ python -m http.server 5500`,
       {
         icon:   'fab fa-css3',
         label:  'CSS Modules',
-        detail: 'Scoped component styling — no utility frameworks, small bundle sizes',
+        detail: 'Scoped component styling - no utility frameworks, small bundle sizes',
       },
       {
         icon:   'fab fa-css3',
@@ -1051,7 +1051,7 @@ python -m http.server 5500`,
       {
         icon:   'fab fa-wordpress',
         label:  'WordPress (Headless CMS)',
-        detail: 'WordPress powers the blog as a headless CMS — Next.js consumes the REST API to render posts',
+        detail: 'WordPress powers the blog as a headless CMS - Next.js consumes the REST API to render posts',
       },
       {
         icon:   'fas fa-route',
@@ -1074,12 +1074,12 @@ python -m http.server 5500`,
       {
         icon:   'fa fa-route',
         label:  'Dynamic Routes',
-        detail: 'Blog and service detail pages are generated dynamically — add a data entry, get a new page',
+        detail: 'Blog and service detail pages are generated dynamically - add a data entry, get a new page',
       },
       {
         icon:   'fa fa-envelope',
         label:  'Serverless Contact API',
-        detail: 'Two API routes (api/contact.js, api/form.js) — adaptable to any SMTP or serverless mail provider',
+        detail: 'Two API routes (api/contact.js, api/form.js) - adaptable to any SMTP or serverless mail provider',
       },
       {
         icon:   'fa fa-universal-access',
@@ -1125,14 +1125,14 @@ npm run dev`,
     slug: 'clipifyit',
 
     meta: {
-      title:       'ClipifyIt — Clipboard Manager App',
-      description: 'A Next.js clipboard manager — save URLs for offline reading, share articles from Android, persistent clipboard lists, compression tools, auth flows, and optional Supabase, Stripe, and AWS Amplify integrations.',
+      title:       'ClipifyIt - Clipboard Manager App',
+      description: 'A Next.js clipboard manager - save URLs for offline reading, share articles from Android, persistent clipboard lists, compression tools, auth flows, and optional Supabase, Stripe, and AWS Amplify integrations.',
     },
 
     hero: {
       bg:       '/assets/images/folio/clipifyit/clipifyit-hero-large.webp',
       title:    'ClipifyIt',
-      subtitle: 'A full-stack Next.js clipboard manager — save URLs to read offline, share articles straight from Android, compress and compare clipboard content, with user auth and optional cloud integrations.',
+      subtitle: 'A full-stack Next.js clipboard manager - save URLs to read offline, share articles straight from Android, compress and compare clipboard content, with user auth and optional cloud integrations.',
       badges:   ['Next.js', 'CSS Modules', 'PWA / Offline', 'Web Share Target', 'Supabase', 'Stripe', 'AWS Amplify', 'React Context', 'SEO'],
       actions:  [
         {
@@ -1145,8 +1145,8 @@ npm run dev`,
 
     overview: [
       'ClipifyIt is a web application for capturing, managing, compressing, and sharing clipboard content. Built with Next.js, it demonstrates real-world application architecture: modular components, authentication flows, React Context for global state, and integration-ready hooks for cloud services.',
-      'A standout feature is offline-ready saved articles. Users can save any URL directly to their account and access the content later — no internet connection required. This makes ClipifyIt particularly useful when travelling, commuting, or during outages. On Android, users can share a link from any browser or app straight to ClipifyIt using the native share sheet, without ever opening the app manually.',
-      'The project is built with extensibility in mind — integrations for Supabase (database & auth), Stripe (payments), and AWS Amplify (cloud infrastructure) can be found, making it a practical showcase of how modern web apps are structured for production. Server-rendered pages and full SEO metadata ensure the public-facing content is crawlable and ranks well.',
+      'A standout feature is offline-ready saved articles. Users can save any URL directly to their account and access the content later - no internet connection required. This makes ClipifyIt particularly useful when travelling, commuting, or during outages. On Android, users can share a link from any browser or app straight to ClipifyIt using the native share sheet, without ever opening the app manually.',
+      'The project is built with extensibility in mind - integrations for Supabase (database & auth), Stripe (payments), and AWS Amplify (cloud infrastructure) can be found, making it a practical showcase of how modern web apps are structured for production. Server-rendered pages and full SEO metadata ensure the public-facing content is crawlable and ranks well.',
     ],
 
     screenshots: [
@@ -1154,29 +1154,29 @@ npm run dev`,
         src:     '/assets/images/folio/clipifyit/clipifyit-card.webp',
         fullSrc: '/assets/images/folio/clipifyit/clipifyit-free-large-full.webp',
         alt:     'ClipifyIt app screenshot',
-        caption: 'ClipifyIt — Clipboard manager dashboard',
+        caption: 'ClipifyIt - Clipboard manager dashboard',
         eager:   true,
       },
       {
         src:     '/assets/images/folio/clipifyit/clipifyit-free-large-card.webp',
         fullSrc: '/assets/images/folio/clipifyit/clipifyit-free-large-large.webp',
         alt:     'ClipifyIt clipboard list view',
-        caption: 'ClipifyIt Free Version — items stored in local storage',
+        caption: 'ClipifyIt Free Version - items stored in local storage',
       },
       // {
       //   src:     '/assets/images/folio/clipifyit/clipifyit-compression.webp',
       //   alt:     'ClipifyIt compression tools',
-      //   caption: 'Compression & Comparison — Tools to compress and diff clipboard content',
+      //   caption: 'Compression & Comparison - Tools to compress and diff clipboard content',
       // },
       // {
       //   src:     '/assets/images/folio/clipifyit/clipifyit-dashboard.webp',
       //   alt:     'ClipifyIt dashboard and controls',
-      //   caption: 'Dashboard — User controls, saved articles, and clipboard history',
+      //   caption: 'Dashboard - User controls, saved articles, and clipboard history',
       // },
       // {
       //   src:     '/assets/images/folio/clipifyit/clipifyit-auth.webp',
       //   alt:     'ClipifyIt auth flow',
-      //   caption: 'Auth — Authentication provider with user session context',
+      //   caption: 'Auth - Authentication provider with user session context',
       // },
     ],
 
@@ -1197,12 +1197,12 @@ npm run dev`,
         {
           number: 3,
           name:   'Saved Articles & Offline Reading',
-          notes:  'Users save URLs to their account; content is cached for offline access — ideal for travel, commutes, and connectivity blackouts',
+          notes:  'Users save URLs to their account; content is cached for offline access - ideal for travel, commutes, and connectivity blackouts',
         },
         {
           number: 4,
           name:   'Android Share Target',
-          notes:  'Via the Web Share Target API, any link shared from Chrome or another Android app is sent directly into ClipifyIt — no copy-paste required',
+          notes:  'Via the Web Share Target API, any link shared from Chrome or another Android app is sent directly into ClipifyIt - no copy-paste required',
         },
         {
           number: 5,
@@ -1222,12 +1222,12 @@ npm run dev`,
         {
           number: 8,
           name:   'Supabase Integration',
-          notes:  'Optional Postgres database and auth backend — configured through environment variables',
+          notes:  'Optional Postgres database and auth backend - configured through environment variables',
         },
         {
           number: 9,
           name:   'Stripe Integration',
-          notes:  'Optional payments integration — STRIPE_SECRET_KEY configured via .env.local',
+          notes:  'Optional payments integration - STRIPE_SECRET_KEY configured via .env.local',
         },
         {
           number: 10,
@@ -1241,7 +1241,7 @@ npm run dev`,
       {
         icon:   'fab fa-react',
         label:  'Next.js & React',
-        detail: 'App framework — server-rendered pages, API routes, and file-based routing',
+        detail: 'App framework - server-rendered pages, API routes, and file-based routing',
       },
       {
         icon:   'fab fa-css3',
@@ -1251,17 +1251,17 @@ npm run dev`,
       {
         icon:   'fas fa-database',
         label:  'Supabase',
-        detail: 'Optional Postgres database and auth backend — configured via NEXT_PUBLIC_SUPABASE_URL and anon key',
+        detail: 'Optional Postgres database and auth backend - configured via NEXT_PUBLIC_SUPABASE_URL and anon key',
       },
       {
         icon:   'fas fa-credit-card',
         label:  'Stripe',
-        detail: 'Optional payments integration — wired via STRIPE_SECRET_KEY environment variable',
+        detail: 'Optional payments integration - wired via STRIPE_SECRET_KEY environment variable',
       },
       {
         icon:   'fab fa-aws',
         label:  'AWS Amplify',
-        detail: 'Optional cloud infrastructure — Amplify config lives in the amplify/ directory',
+        detail: 'Optional cloud infrastructure - Amplify config lives in the amplify/ directory',
       },
       {
         icon:   'fas fa-layer-group',
@@ -1276,7 +1276,7 @@ npm run dev`,
       {
         icon:   'fab fa-android',
         label:  'Web Share Target API',
-        detail: 'Registered as a share target — Android users send URLs to ClipifyIt directly from the system share sheet',
+        detail: 'Registered as a share target - Android users send URLs to ClipifyIt directly from the system share sheet',
       },
       {
         icon:   'fas fa-search',
@@ -1289,12 +1289,12 @@ npm run dev`,
       {
         icon:   'fa fa-cubes',
         label:  'Modular Components',
-        detail: 'Every UI piece is an isolated component — ClipboardList, ClipboardItem, CompressionControls, ComparisonTable, Controls',
+        detail: 'Every UI piece is an isolated component - ClipboardList, ClipboardItem, CompressionControls, ComparisonTable, Controls',
       },
       {
         icon:   'fa fa-lock',
         label:  'Auth Flows',
-        detail: 'Full authentication context with user session management — ready to wire to Supabase or any auth provider',
+        detail: 'Full authentication context with user session management - ready to wire to Supabase or any auth provider',
       },
       {
         icon:   'fa fa-compress-alt',
@@ -1304,17 +1304,17 @@ npm run dev`,
       {
         icon:   'fa fa-plug',
         label:  'Integration-Ready',
-        detail: 'Supabase, Stripe, and AWS Amplify integrations are opt-in via environment variables — ship lean or fully-featured',
+        detail: 'Supabase, Stripe, and AWS Amplify integrations are opt-in via environment variables - ship lean or fully-featured',
       },
       {
         icon:   'fa fa-bookmark',
         label:  'Save for Offline',
-        detail: 'Users save article URLs to their account and read them any time — no signal needed. Perfect for travel, commutes, or internet outages',
+        detail: 'Users save article URLs to their account and read them any time - no signal needed. Perfect for travel, commutes, or internet outages',
       },
       {
         icon:   'fab fa-android',
         label:  'Android Share Integration',
-        detail: 'Tap Share in any Android app and choose ClipifyIt — the URL lands straight in your saved list via the Web Share Target API',
+        detail: 'Tap Share in any Android app and choose ClipifyIt - the URL lands straight in your saved list via the Web Share Target API',
       },
       {
         icon:   'fa fa-search',

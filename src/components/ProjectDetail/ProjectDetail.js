@@ -232,7 +232,7 @@ export default function ProjectDetail({ project }) {
             <p>
               I&apos;m a front-end developer specialising in pixel-perfect builds as well as
               WordPress, React and Next.js. I take designs and translate them into clean, semantic,
-              accessible, production-ready code — fast.
+              accessible, production-ready code - fast.
             </p>
             <div className={styles.ctaBtns}>
               <Link href="/#contact" className="button">

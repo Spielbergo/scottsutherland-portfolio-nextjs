@@ -24,7 +24,7 @@ const nothingYouCouldDo = Nothing_You_Could_Do({
 export const metadata = {
   metadataBase: new URL('https://www.scottsutherland.info'),
   title: {
-    default: 'Scott Sutherland | Front End Developer — Toronto',
+    default: 'Scott Sutherland | Front End Developer - Toronto',
     template: '%s | Scott Sutherland',
   },
   description:
@@ -43,7 +43,7 @@ export const metadata = {
   robots: { index: true, follow: true },
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Scott Sutherland | Front End Developer — Toronto',
+    title: 'Scott Sutherland | Front End Developer - Toronto',
     description:
       'Toronto-based Front End Developer specialising in HTML, CSS, JavaScript, React and Next.js. Available for freelance projects.',
     url: 'https://www.scottsutherland.info',
@@ -53,7 +53,7 @@ export const metadata = {
         url: '/assets/images/header-img-old.jpg',
         width: 1920,
         height: 1080,
-        alt: 'Scott Sutherland — Front End Developer',
+        alt: 'Scott Sutherland - Front End Developer',
       },
     ],
     locale: 'en_CA',
@@ -61,7 +61,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Scott Sutherland | Front End Developer — Toronto',
+    title: 'Scott Sutherland | Front End Developer - Toronto',
     description:
       'Toronto-based Front End Developer specialising in HTML, CSS, JavaScript, React and Next.js.',
     images: ['/assets/images/header-img-old.jpg'],
@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
       </head>
       <body>
-        {/* Skip to main content — keyboard / screen reader navigation */}
+        {/* Skip to main content - keyboard / screen reader navigation */}
         <a href="#main-content" className="skip-link">Skip to main content</a>
 
         {/* GTM noscript */}

@@ -1,4 +1,4 @@
-# Dezign — UI/UX & Interaction Designer — Figma → HTML Portfolio
+# Dezign - UI/UX & Interaction Designer - Figma → HTML Portfolio
 
 A hand-coded, accessible, and performance-minded static portfolio site built from a Figma concept. This repository is a demo project used in a portfolio to showcase UI/UX and interaction design work.
 
@@ -15,18 +15,18 @@ A hand-coded, accessible, and performance-minded static portfolio site built fro
 - Modern, lightweight frontend with no framework dependencies.
 
 **Tech Stack**
-- HTML5 — semantic markup and ARIA roles.
-- CSS3 — custom properties, CSS Grid, Flexbox, responsive media queries.
-- Vanilla JavaScript — mobile nav, smooth scroll, and minimal interaction code.
-- Google Fonts — `Inter` and `Work Sans` (loaded non-blocking).
-- SVG — logo and client marks.
+- HTML5 - semantic markup and ARIA roles.
+- CSS3 - custom properties, CSS Grid, Flexbox, responsive media queries.
+- Vanilla JavaScript - mobile nav, smooth scroll, and minimal interaction code.
+- Google Fonts - `Inter` and `Work Sans` (loaded non-blocking).
+- SVG - logo and client marks.
 
 **Sections Built**
 - Header / Navigation (desktop + hamburger mobile menu)
 - Hero with headline and scroll indicator
 - Clients grid (Airbnb, Google, Microsoft, FedEx placeholders)
-- Works grid — project cards with images, categories and CTAs
-- About — short bio and image grid
+- Works grid - project cards with images, categories and CTAs
+- About - short bio and image grid
 - Contact / social links and footer
 
 **Key Implementation Details**
@@ -36,15 +36,15 @@ A hand-coded, accessible, and performance-minded static portfolio site built fro
 - **Structured Data:** JSON-LD schema included in `index.html` for `WebSite`, `Person`, `WebPage`, `Organization`, and a `BreadcrumbList`. Note: the demo intentionally keeps `meta name="robots" content="noindex, nofollow"` so the site will not be indexed.
 
 **Files of Note**
-- `index.html` — main site markup
-- `styles.css` — site styles and design tokens
-- `script.js` — minimal interaction scripts (mobile nav toggle, etc.)
-- `images/` — project and logo assets
+- `index.html` - main site markup
+- `styles.css` - site styles and design tokens
+- `script.js` - minimal interaction scripts (mobile nav toggle, etc.)
+- `images/` - project and logo assets
 - `favicon.svg`, `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png`
-- `generate_favicons.py` — (optional) Python script that uses Pillow to regenerate PNG/ICO assets
+- `generate_favicons.py` - (optional) Python script that uses Pillow to regenerate PNG/ICO assets
 
 **Local Development**
-No build step required — serve the folder with any static server. Example using Python:
+No build step required - serve the folder with any static server. Example using Python:
 
 ```bash
 # from repository root

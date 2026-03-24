@@ -13,7 +13,7 @@ export default function Navbar() {
   const isHome = pathname === '/';
   const isPortfolio = pathname === '/portfolio';
 
-  // Track which section is in view — only meaningful on the home page.
+  // Track which section is in view - only meaningful on the home page.
   // Driving this from React state (not DOM classList) means highlights
   // are always in sync with the current route and never go stale.
   const [activeSection, setActiveSection] = useState('');
@@ -56,7 +56,7 @@ export default function Navbar() {
       navMenu.classList.remove(styles.mobileActive);
     };
 
-    // Update activeSection state based on scroll position — home only.
+    // Update activeSection state based on scroll position - home only.
     // Uses the "last section whose top edge has passed" approach.
     const highlightNav = () => {
       const sections = document.querySelectorAll('section[id]');
